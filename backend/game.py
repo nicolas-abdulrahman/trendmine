@@ -73,8 +73,67 @@ def stochastic_data_miner():
         # Catching DisambiguationError or PageError and recursing
         return stochastic_data_miner()
 
-# Execute
-data = stochastic_data_miner()
-print(f"📍 Discovery Origin: {data['seed_origin']}")
-print(f"📂 Detected Theme: {data['theme']}")
-print(f"⚔️  Battle: {data['competitor_a']} vs {data['competitor_b']}")
+
+
+from pytrends.request import TrendReq
+import time
+
+# Initialize Pytrends (Brazil context)
+# hl='pt-BR' ensures we use Portuguese, tz=180 is Brazil's offset
+pytrends = TrendReq(hl='pt-BR', tz=180)
+
+def play_trends_game():
+    print("🎮 Bem-vindo ao TrendMine 2026!")
+    score = 0
+    
+    while True:
+        # 1. MINE: Get our random pair from the miner we built
+        data = stochastic_data_miner() # Using your previous function
+        competitors = [data['competitor_a'], data['competitor_b']]
+        
+        print(f"\n📂 TEMA: {data['theme']}")
+        print(f"1. {competitors[0]}")
+        print(f"2. {competitors[1]}")
+        
+        choice = input("Quem teve mais buscas nos últimos 7 dias? (1 ou 2, ou 'sair'): ")
+        if choice.lower() == 'sair': break
+
+        # 2. FETCH: Get data from Google Trends
+        print("📊 Consultando o Google Trends...")
+        try:
+            pytrends.build_payload(competitors, timeframe='now 7-d', geo='BR')
+            df = pytrends.interest_over_time()
+            
+            if df.empty:
+                print("⚠️  Dados insuficientes para essa dupla. Pulando...")
+                continue
+
+            # 3. COMPARE: Calculate mean interest
+            avg_a = df[competitors[0]].mean()
+            avg_b = df[competitors[1]].mean()
+            
+            winner_idx = "1" if avg_a > avg_b else "2"
+            winner_name = competitors[0] if avg_a > avg_b else competitors[1]
+
+            # 4. RESULTS
+            print(f"\n📈 RESULTADOS:")
+            print(f"{competitors[0]}: {round(avg_a, 1)}")
+            print(f"{competitors[1]}: {round(avg_b, 1)}")
+
+            if choice == winner_idx:
+                score += 1
+                print(f"✅ ACERTOU! O vencedor é {winner_name}. Combo: {score}")
+            else:
+                print(f"❌ ERROU! {winner_name} dominou as buscas.")
+                score = 0
+                
+            # Anti-rate limit sleep (Google is sensitive!)
+            time.sleep(2) 
+
+        except Exception as e:
+            print(f"🤯 Erro na API: {e}. Vamos tentar outra dupla...")
+            time.sleep(5)
+    print(f"📍 Discovery Origin: {data['seed_origin']}")
+    print(f"📂 Detected Theme: {data['theme']}")
+    print(f"⚔️  Battle: {data['competitor_a']} vs {data['competitor_b']}")
+play_trends_game()
