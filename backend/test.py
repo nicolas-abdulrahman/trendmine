@@ -11,7 +11,7 @@ Make sure the API is running first:
 import requests
 import json
 
-BASE_URL = "http://localhost:8000"
+BASE_URL = "http://127.0.0.1:8000"
 
 def separator(title: str):
     print(f"\n{'─' * 50}")
@@ -24,6 +24,7 @@ def print_json(data: dict):
 def test_seeds():
     separator("GET /seeds")
     r = requests.get(f"{BASE_URL}/seeds")
+    print(r.json())
     assert r.status_code == 200, f"Expected 200, got {r.status_code}"
     data = r.json()
     assert "seeds" in data, "Missing 'seeds' key"
