@@ -1,189 +1,263 @@
+import "./index.css";
+import { useState, ReactNode } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import {
+  Trophy,
+  BookOpen,
+  PartyPopper,
+  Settings,
+  BarChart3,
+  Globe,
+  Share2,
+  ChevronRight,
+} from "lucide-react";
 
-import React, { useState, useEffect } from 'react';
-import { Trophy, TrendingUp, RefreshCw, Activity } from 'lucide-react';
-
-// 1. Define the Shape of our Mined Data
-interface BattleData {
-  theme: string;
-  competitor_a: string;
-  competitor_b: string;
-  avg_a: number;
-  avg_b: number;
+interface ThemeCardProps {
+  title: string;
+  description: string;
+  icon: ReactNode;
+  colorClass: string;
+  iconBgClass: string;
+  iconColorClass: string;
+  lineColorClass: string;
+  delay: number;
 }
 
-// 2. Define the possible Game States
-type GameStatus = 'loading' | 'playing' | 'revealed' | 'error';
+const ThemeCard = ({
+  title,
+  description,
+  icon,
+  colorClass,
+  iconBgClass,
+  iconColorClass,
+  lineColorClass,
+  delay,
+}: ThemeCardProps) => {
+  return (
+    <motion.button
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay, duration: 0.5, ease: [0.34, 1.56, 0.64, 1] }}
+      whileHover={{ y: -16, scale: 1.02 }}
+      className={`group relative flex flex-col items-center p-10 rounded-xl ${colorClass} transition-all duration-500 overflow-hidden cursor-pointer w-full`}
+    >
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
-const TrendMineGame: React.FC = () => {
-  const [battle, setBattle] = useState<BattleData | null>(null);
-  const [gameState, setGameState] = useState<GameStatus>('loading');
-  const [userSelection, setUserSelection] = useState<'a' | 'b' | null>(null);
-  const [streak, setStreak] = useState<number>(0);
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        className={`w-32 h-32 rounded-full ${iconBgClass} flex items-center justify-center mb-8 relative z-10 transition-transform duration-500`}
+      >
+        <div className={iconColorClass}>{icon}</div>
+      </motion.div>
 
-  const startNewBattle = async () => {
-    setGameState('loading');
-    setUserSelection(null);
-    try {
-      // Connects to your Flask Stochastic Miner
-      const response = await fetch('http://127.0.0.1:8000/api/get-battle');
-      if (!response.ok) throw new Error('Network response was not ok');
-      
-      const data: BattleData = await response.json();
-      setBattle(data);
-      setGameState('playing');
-    } catch (error) {
-      console.error("Mining error:", error);
-      setGameState('error');
-    }
-  };
+      <h2 className="font-headline text-3xl font-bold text-on-surface relative z-10">
+        {title}
+      </h2>
+      <p className="font-body text-on-surface-variant mt-3 text-sm opacity-80 relative z-10">
+        {description}
+      </p>
 
-  useEffect(() => {
-    startNewBattle();
-  }, []);
+      <div
+        className={`mt-8 w-12 h-1 ${lineColorClass} rounded-full group-hover:w-24 transition-all duration-500`}
+      />
+    </motion.button>
+  );
+};
 
-  const handleGuess = (choice: 'a' | 'b') => {
-    if (gameState !== 'playing' || !battle) return;
-    
-    setUserSelection(choice);
-    setGameState('revealed');
-
-    const isAWinner = battle.avg_a > battle.avg_b;
-    const correct = (choice === 'a' && isAWinner) || (choice === 'b' && !isAWinner);
-
-    if (correct) {
-      setStreak(s => s + 1);
-    } else {
-      setStreak(0);
-    }
-  };
-
-  if (gameState === 'loading') {
-    return (
-      <div className="h-screen bg-slate-950 flex flex-col items-center justify-center text-cyan-400">
-        <RefreshCw className="animate-spin mb-4" size={48} />
-        <h2 className="text-xl font-mono tracking-widest animate-pulse">MINERANDO DADOS...</h2>
-      </div>
-    );
-  }
-
-  if (gameState === 'error') {
-    return (
-      <div className="h-screen bg-slate-950 flex flex-col items-center justify-center text-red-400">
-        <Activity size={48} className="mb-4" />
-        <h2 className="text-xl font-bold">ERRO NA API DO FLASK</h2>
-        <button onClick={startNewBattle} className="mt-4 underline">Tentar novamente</button>
-      </div>
-    );
-  }
+export default function App() {
+  const [score] = useState(0);
+  const [best] = useState(12);
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white font-sans p-6 md:p-12">
-      {/* HUD Section */}
-      <header className="max-w-5xl mx-auto flex justify-between items-end mb-16">
-        <div>
-          <h1 className="text-5xl font-black italic tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
-            TRENDMINE
-          </h1>
-          <p className="text-[10px] text-slate-500 font-mono mt-1 uppercase tracking-widest">
-            Stochastic Discovery Engine 2026
-          </p>
-        </div>
-        <div className="bg-slate-900/50 backdrop-blur-md border border-slate-800 px-8 py-3 rounded-2xl flex items-center gap-4 shadow-2xl">
-          <Trophy className="text-yellow-500" size={24} />
-          <span className="text-3xl font-black font-mono">{streak}</span>
-        </div>
-      </header>
+    <div className="min-h-screen flex flex-col bg-background selection:bg-primary/20">
+      {/* Navigation */}
+      <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-primary/5">
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <span className="text-2xl font-black italic tracking-tighter text-primary">
+              PULSE DUEL
+            </span>
+          </div>
 
-      {/* Categorization Badge */}
-      <div className="flex justify-center mb-12">
-        <div className="px-6 py-2 rounded-full bg-slate-900 border border-slate-700 shadow-inner">
-          <span className="text-slate-400 text-xs font-bold mr-2">THEME:</span>
-          <span className="text-cyan-400 font-black uppercase tracking-wider">{battle?.theme}</span>
-        </div>
-      </div>
+          <div className="hidden md:flex items-center gap-8">
+            {["Play", "Themes", "Leaderboard"].map((item) => (
+              <button
+                key={item}
+                className={`font-headline font-bold text-sm transition-all hover:scale-105 ${
+                  item === "Themes"
+                    ? "text-primary border-b-2 border-primary"
+                    : "text-on-surface/60 hover:text-on-surface"
+                }`}
+              >
+                {item}
+              </button>
+            ))}
+          </div>
+          <div className="h-screen bg-red-500 flex items-center justify-center">
+            <h1 className="text-5xl text-white font-bold">
+              Tailwind is Active
+            </h1>
+          </div>
 
-      {/* Battle Grid */}
-      <main className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 relative">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 hidden md:block">
-          <div className="w-20 h-20 bg-slate-950 border-8 border-slate-900 rounded-full flex items-center justify-center font-black italic text-2xl text-slate-700">
-            VS
+          <div className="flex items-center gap-6">
+            <div className="flex flex-col items-end">
+              <span className="text-primary font-headline font-bold tracking-tight">
+                Score: {score}
+              </span>
+              <span className="text-[10px] uppercase tracking-wider opacity-60 font-bold">
+                Best: {best}
+              </span>
+            </div>
+            <div className="flex gap-2">
+              <button className="p-2 rounded-full hover:bg-primary/10 text-primary transition-colors">
+                <BarChart3 size={20} />
+              </button>
+              <button className="p-2 rounded-full hover:bg-primary/10 text-primary transition-colors">
+                <Settings size={20} />
+              </button>
+            </div>
           </div>
         </div>
+      </nav>
 
-        <CompetitorCard 
-          name={battle!.competitor_a}
-          score={battle!.avg_a}
-          isRevealed={gameState === 'revealed'}
-          isSelected={userSelection === 'a'}
-          isWinner={battle!.avg_a > battle!.avg_b}
-          onClick={() => handleGuess('a')}
-        />
+      <main className="flex-grow flex flex-col items-center justify-center px-6 py-12 relative overflow-hidden">
+        {/* Ambient Background Glows */}
+        <div className="absolute top-[-10%] left-[-5%] w-[500px] h-[500px] bg-primary-container/10 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-[-10%] right-[-5%] w-[500px] h-[500px] bg-secondary-container/10 rounded-full blur-[120px] pointer-events-none" />
 
-        <CompetitorCard 
-          name={battle!.competitor_b}
-          score={battle!.avg_b}
-          isRevealed={gameState === 'revealed'}
-          isSelected={userSelection === 'b'}
-          isWinner={battle!.avg_b > battle!.avg_a}
-          onClick={() => handleGuess('b')}
-        />
+        <div className="w-full max-w-6xl z-10">
+          <header className="text-center mb-16">
+            <motion.h1
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-4 text-shadow-glow"
+            >
+              Which is more{" "}
+              <span className="text-primary italic">searched?</span>
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="font-body text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto"
+            >
+              Test your intuition against global trends. Pick a theme to start
+              the duel.
+            </motion.p>
+          </header>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+            <ThemeCard
+              title="Football"
+              description="Clubs, Players, Leagues"
+              icon={<Trophy size={48} strokeWidth={1.5} />}
+              colorClass="bg-surface-container-low hover:bg-surface-container"
+              iconBgClass="bg-primary-container"
+              iconColorClass="text-on-primary-container"
+              lineColorClass="bg-primary"
+              delay={0.3}
+            />
+            <ThemeCard
+              title="Books"
+              description="Literature, Authors, Genres"
+              icon={<BookOpen size={48} strokeWidth={1.5} />}
+              colorClass="bg-surface-container-high hover:bg-surface-container-highest"
+              iconBgClass="bg-tertiary-container"
+              iconColorClass="text-on-tertiary-container"
+              lineColorClass="bg-tertiary-container"
+              delay={0.4}
+            />
+            <ThemeCard
+              title="Events"
+              description="History, Holidays, Festivals"
+              icon={<PartyPopper size={48} strokeWidth={1.5} />}
+              colorClass="bg-secondary-container/20 hover:bg-secondary-container/40"
+              iconBgClass="bg-secondary-container"
+              iconColorClass="text-on-secondary-container"
+              lineColorClass="bg-secondary"
+              delay={0.5}
+            />
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.7 }}
+            className="mt-20 flex justify-center"
+          >
+            <button className="group relative bg-gradient-to-r from-primary to-primary-container text-on-primary font-headline font-bold py-5 px-12 rounded-full text-xl shadow-xl shadow-primary/20 hover:scale-105 hover:brightness-110 transition-all duration-300 active:scale-95 flex items-center gap-3">
+              Surprise Me
+              <ChevronRight className="group-hover:translate-x-1 transition-transform" />
+            </button>
+          </motion.div>
+        </div>
+
+        {/* Side Bento Cards (Desktop Only) */}
+        <aside className="hidden xl:flex flex-col gap-6 absolute right-12 top-1/2 -translate-y-1/2 w-72">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.8 }}
+            className="p-6 rounded-2xl bg-surface-container-low border-l-4 border-primary shadow-sm"
+          >
+            <p className="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">
+              Trend Report
+            </p>
+            <h4 className="font-headline font-bold text-on-surface leading-tight">
+              "Super Bowl" is peaking right now.
+            </h4>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.9 }}
+            className="p-6 rounded-2xl bg-surface-container-low border-l-4 border-secondary shadow-sm"
+          >
+            <p className="text-[10px] font-bold uppercase tracking-widest text-secondary mb-2">
+              Did you know?
+            </p>
+            <h4 className="font-headline font-bold text-on-surface leading-tight">
+              Football is searched 4x more than Baseball globally.
+            </h4>
+          </motion.div>
+        </aside>
       </main>
 
-      {/* Navigation */}
-      {gameState === 'revealed' && (
-        <footer className="mt-16 flex justify-center">
-          <button 
-            onClick={startNewBattle}
-            className="group bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-black px-16 py-5 rounded-2xl text-2xl transition-all transform hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(6,182,212,0.3)]"
-          >
-            PRÓXIMO ALVO
-          </button>
-        </footer>
-      )}
+      <footer className="bg-surface-container-low/50 border-t border-primary/5">
+        <div className="max-w-7xl mx-auto px-12 py-10 flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="flex flex-col items-center md:items-start gap-1">
+            <span className="text-lg font-black text-primary italic">
+              PULSE DUEL
+            </span>
+            <span className="text-[10px] font-medium tracking-widest uppercase opacity-40">
+              © 2024 THE ELECTRIC PLAYGROUND
+            </span>
+          </div>
+
+          <div className="flex gap-8">
+            {["Privacy", "Terms", "Support"].map((link) => (
+              <a
+                key={link}
+                href="#"
+                className="text-xs font-bold uppercase tracking-widest text-on-surface/40 hover:text-primary transition-colors"
+              >
+                {link}
+              </a>
+            ))}
+          </div>
+
+          <div className="flex gap-4">
+            <button className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:scale-110 hover:bg-primary/10 text-primary transition-all">
+              <Globe size={18} />
+            </button>
+            <button className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:scale-110 hover:bg-primary/10 text-primary transition-all">
+              <Share2 size={18} />
+            </button>
+          </div>
+        </div>
+      </footer>
     </div>
   );
-};
-
-// --- Sub-Component Props Interface ---
-interface CardProps {
-  name: string;
-  score: number;
-  isRevealed: boolean;
-  isSelected: boolean;
-  isWinner: boolean;
-  onClick: () => void;
 }
 
-const CompetitorCard: React.FC<CardProps> = ({ name, score, isRevealed, isSelected, isWinner, onClick }) => {
-  return (
-    <button
-      onClick={onClick}
-      disabled={isRevealed}
-      className={`
-        relative h-80 md:h-[450px] rounded-[40px] p-10 flex flex-col justify-center items-center text-center transition-all duration-700 border-4
-        ${!isRevealed ? 'bg-slate-900 border-slate-800 hover:border-cyan-500 hover:shadow-[0_0_50px_rgba(6,182,212,0.1)] active:scale-95' : ''}
-        ${isRevealed && isWinner ? 'bg-cyan-500/10 border-cyan-500 shadow-[0_0_60px_rgba(6,182,212,0.2)]' : ''}
-        ${isRevealed && !isWinner ? 'bg-slate-950 border-slate-900 grayscale opacity-40' : ''}
-        ${isSelected && !isWinner ? 'border-red-600 bg-red-900/10' : ''}
-      `}
-    >
-      <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-none mb-6">
-        {name}
-      </h2>
-      
-      {isRevealed && (
-        <div className="flex flex-col items-center animate-in zoom-in duration-500">
-          <span className="text-6xl font-mono font-black text-white">
-            {Math.round(score)}
-          </span>
-          <div className="h-1 w-12 bg-cyan-500 mt-4 rounded-full" />
-          <p className="text-[10px] uppercase font-bold text-slate-500 mt-3 tracking-widest">
-            Search Interest Index
-          </p>
-        </div>
-      )}
-    </button>
-  );
-};
-
-export default TrendMineGame;
