@@ -1,10 +1,5 @@
 import { motion } from "motion/react";
-import {
-  Trophy,
-  BookOpen,
-  PartyPopper,
-  ChevronRight,
-} from "lucide-react";
+import { Trophy, BookOpen, PartyPopper, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import ThemeCard from "../components/ThemeCard";
 
@@ -24,8 +19,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             className="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-4 text-shadow-glow"
           >
-            Which is more{" "}
-            <span className="text-primary italic">searched?</span>
+            Which is more <span className="text-primary italic">searched?</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -33,8 +27,8 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             className="font-body text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto"
           >
-            Test your intuition against global trends. Pick a theme to start
-            the duel.
+            Test your intuition against global trends. Pick a theme to start the
+            duel.
           </motion.p>
         </header>
 
@@ -48,6 +42,7 @@ export default function Home() {
             iconColorClass="text-on-primary-container"
             lineColorClass="bg-primary"
             delay={0.3}
+            seed="football"
           />
           <ThemeCard
             title="Books"
@@ -58,6 +53,7 @@ export default function Home() {
             iconColorClass="text-on-tertiary-container"
             lineColorClass="bg-tertiary-container"
             delay={0.4}
+            seed="books"
           />
           <ThemeCard
             title="Events"
@@ -68,6 +64,7 @@ export default function Home() {
             iconColorClass="text-on-secondary-container"
             lineColorClass="bg-secondary"
             delay={0.5}
+            seed="events"
           />
         </div>
 

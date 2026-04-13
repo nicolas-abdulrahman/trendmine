@@ -9,11 +9,13 @@ import Battle from "./pages/battle";
 function AppLayout() {
   const [score, setScore] = useState(0);
   const [best, setBest] = useState(12);
-
   return (
     <div className="min-h-screen flex flex-col bg-background selection:bg-primary/20">
       <TrendmineNavBar score={score} best={best} />
-      <Outlet context={{ score, setScore, best, setBest }} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/battle" element={<Battle />} />
+      </Routes>
       <TrendMineFooter />
     </div>
   );

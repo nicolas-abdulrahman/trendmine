@@ -4,7 +4,6 @@ import { TrendingUp, History, ChevronRight } from "lucide-react";
 export interface Topic {
   id: string;
   name: string;
-  subtext: string;
   imageUrl: string;
   searchVolume: number;
   icon: "trending" | "history";
@@ -75,15 +74,6 @@ export default function GameCard({
             </span>
           ))}
         </motion.div>
-
-        <div className="mt-4 flex items-center gap-2 text-white/90 font-headline font-bold uppercase tracking-widest text-sm">
-          {topic.icon === "trending" ? (
-            <TrendingUp size={16} />
-          ) : (
-            <History size={16} />
-          )}
-          {topic.subtext}
-        </div>
 
         {isRevealing && (
           <motion.div

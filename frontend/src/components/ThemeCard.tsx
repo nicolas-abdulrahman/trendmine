@@ -11,6 +11,7 @@ export interface ThemeCardProps {
   iconColorClass: string;
   lineColorClass: string;
   delay: number;
+  seed: string;
   /** Client route to open when the card is clicked (default `/battle`). */
   to?: string;
 }
@@ -24,6 +25,7 @@ export default function ThemeCard({
   iconColorClass,
   lineColorClass,
   delay,
+  seed,
   to = "/battle",
 }: ThemeCardProps) {
   const navigate = useNavigate();
@@ -35,7 +37,7 @@ export default function ThemeCard({
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay, duration: 0.5, ease: [0.34, 1.56, 0.64, 1] }}
       whileHover={{ y: -16, scale: 1.02 }}
-      onClick={() => navigate(to)}
+      onClick={() => navigate(`${to}?seed=${encodeURIComponent(seed)}`)}
       className={`group relative flex flex-col items-center p-10 rounded-xl ${colorClass} transition-all duration-500 overflow-hidden cursor-pointer w-full`}
     >
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
