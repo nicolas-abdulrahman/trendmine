@@ -11,7 +11,6 @@ export default function Home() {
       {/* Ambient Background Glows */}
       <div className="absolute top-[-10%] left-[-5%] w-[500px] h-[500px] bg-primary-container/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-[-10%] right-[-5%] w-[500px] h-[500px] bg-secondary-container/10 rounded-full blur-[120px] pointer-events-none" />
-
       <div className="w-full max-w-6xl z-10">
         <header className="text-center mb-16">
           <motion.h1

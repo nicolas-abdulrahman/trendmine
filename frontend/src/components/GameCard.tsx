@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { TrendingUp, History, ChevronRight } from "lucide-react";
+import { getTopicImage } from "../utils/getTopicImage";
 
 export interface Topic {
   id: string;
@@ -15,7 +16,6 @@ export interface GameCardProps {
   isRevealing: boolean;
   side: "left" | "right";
 }
-
 export default function GameCard({
   topic,
   onClick,
@@ -26,7 +26,6 @@ export default function GameCard({
     side === "left"
       ? "from-primary/80 via-transparent to-transparent"
       : "from-secondary/80 via-transparent to-transparent";
-
   if (!topic) {
     return (
       <div

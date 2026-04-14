@@ -1,13 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import TrendMineGame from "./App";
+import App from "./App";
 import "./index.css";
+import TrendMineFooter from "./components/footer";
+import log from "loglevel";
 
+log.setLevel("debug");
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <TrendMineGame />
+      <App />
     </BrowserRouter>
+    <TrendMineFooter />
   </React.StrictMode>,
 );

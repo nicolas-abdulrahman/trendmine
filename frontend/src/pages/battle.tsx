@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { Lightbulb, AlertTriangle, Loader2 } from "lucide-react";
 import { useSearchParams } from "react-router-dom";
 import GameCard, { type Topic } from "../components/GameCard";
+import { getTopicImage } from "../utils/getTopicImage";
 
 interface CompetitorStats {
   mean: number;
@@ -23,11 +24,15 @@ interface BattleResponse {
   all_candidates_scored: number;
 }
 
-function competitorToTopic(id: string, competitor: Competitor): Topic {
+async function competitorToTopic(
+  id: string,
+  competitor: Competitor,
+): Promise<Topic> {
+  const imageUrl = await getTopicImage(competitor.name);
   return {
     id,
     name: competitor.name,
-    imageUrl: `https://picsum.photos/seed/${encodeURIComponent(competitor.name)}/800/1000`,
+    imageUrl: imageUrl,
     searchVolume: competitor.stats.mean,
     icon: "trending",
   };
@@ -58,8 +63,12 @@ export default function Battle() {
       if (!res.ok) throw new Error(`Server error: ${res.status}`);
       const data: BattleResponse = await res.json();
       setBattleData(data);
-      setLeftTopic(competitorToTopic("a", data.competitor_a));
-      setRightTopic(competitorToTopic("b", data.competitor_b));
+      const [left, right] = await Promise.all([
+        competitorToTopic("a", data.competitor_a),
+        competitorToTopic("b", data.competitor_b),
+      ]);
+      setLeftTopic(left);
+      setRightTopic(right);
     } catch (err) {
       setError(err instanceof Error ? err.message : "Failed to load battle");
     } finally {
