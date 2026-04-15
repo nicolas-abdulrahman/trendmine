@@ -17,25 +17,43 @@ Algorithm:
 """
 
 import random
-import numpy as np
-from pytrends.request import TrendReq
 import time
 
-pytrends = TrendReq(hl='pt-BR', tz=180)
+import numpy as np
+from pytrends.request import TrendReq
+
+pytrends = TrendReq(hl="pt-BR", tz=180)
 
 # Small diverse seeds — just entry points for the walk, not the final pool
 SEEDS = [
-    "futebol", "música", "tecnologia", "cinema", "política",
-    "games", "moda", "gastronomia", "esportes", "séries",
-    "carros", "viagem", "celebridades", "economia", "saúde",
+    "futebol",
+    "música",
+    "tecnologia",
+    "cinema",
+    "política",
+    "games",
+    "moda",
+    "gastronomia",
+    "esportes",
+    "séries",
+    "carros",
+    "viagem",
+    "celebridades",
+    "economia",
+    "saúde",
 ]
 
 
 def walk(seed: str, depth: int = 2) -> list[dict]:
     """
-    Random walk starting from seed.
-    Each hop fetches pytrends suggestions and picks a random one.
-    Returns a list of candidate dicts with their raw names.
+    Random walk starting from seed using Google Trends suggestions.
+
+    Args:
+        seed:  Starting keyword for the walk (e.g. "futebol")
+        depth: Number of hops to perform
+
+    Returns:
+        List of suggestion dicts e.g. [{"title": "Marta", "type": ""}, ...]
     """
     candidates = []
     current = seed
@@ -47,16 +65,15 @@ def walk(seed: str, depth: int = 2) -> list[dict]:
                 break
 
             # Filter out type == "Topic" noise, keep concrete entities
-            valid = [s for s in suggestions if s.get("type") not in ("Tema", "Topic")]
+            valid = [s for s in suggestions if s.get("type") == ""]
             if not valid:
                 valid = suggestions
 
-            # Collect all as candidates
-            candidates.extend(valid)
+            likely = random.choices(valid, weights=range(len(valid), 0, -1), k=5)
+            candidates.extend(likely)
 
-            # Pick a random one to continue the walk
-            current = random.choice(valid)["title"]
-            time.sleep(0.3)
+            current = likely[0]["title"]
+            time.sleep(random.uniform(1.0, 2.5))
 
         except Exception:
             break
@@ -77,11 +94,11 @@ def score_candidates(titles: list[str]) -> dict[str, dict]:
     """
     scores = {}
     # pytrends accepts max 5 at once
-    chunks = [titles[i:i+5] for i in range(0, len(titles), 5)]
+    chunks = [titles[i : i + 5] for i in range(0, len(titles), 5)]
 
     for chunk in chunks:
         try:
-            pytrends.build_payload(chunk, timeframe='now 7-d', geo='BR')
+            pytrends.build_payload(chunk, timeframe="now 7-d", geo="BR")
             df = pytrends.interest_over_time()
 
             if df.empty:
@@ -92,13 +109,13 @@ def score_candidates(titles: list[str]) -> dict[str, dict]:
                     continue
                 series = df[title].astype(float)
                 mean = series.mean()
-                std  = series.std()
-                cv   = std / (mean + 1e-9)  # avoid div by zero
+                std = series.std()
+                cv = std / (mean + 1e-9)  # avoid div by zero
 
                 scores[title] = {
                     "mean": round(mean, 2),
-                    "std":  round(std, 2),
-                    "cv":   round(cv, 4),
+                    "std": round(std, 2),
+                    "cv": round(cv, 4),
                 }
 
             time.sleep(0.5)
@@ -115,12 +132,12 @@ def weighted_sample(scores: dict[str, dict], k: int = 2) -> list[str]:
     Higher CV → more likely to be picked.
     Ensures the two picks are different.
     """
-    titles  = list(scores.keys())
+    titles = list(scores.keys())
     weights = [scores[t]["cv"] + 0.01 for t in titles]  # +0.01 avoids zero weights
 
     # Normalize weights to probabilities
-    total   = sum(weights)
-    probs   = [w / total for w in weights]
+    total = sum(weights)
+    probs = [w / total for w in weights]
 
     chosen = np.random.choice(titles, size=k, replace=False, p=probs).tolist()
     return chosen
@@ -142,7 +159,7 @@ def mine(seed: str = None, depth: int = 2) -> dict:
         return mine(depth=depth)
 
     # Deduplicate by title
-    seen   = set()
+    seen = set()
     unique = []
     for c in candidates_raw:
         t = c["title"]
@@ -163,8 +180,8 @@ def mine(seed: str = None, depth: int = 2) -> dict:
     a, b = pair[0], pair[1]
 
     return {
-        "seed":         seed,
-        "theme":        seed.capitalize(),
+        "seed": seed,
+        "theme": seed.capitalize(),
         "competitor_a": {
             "name": a,
             "stats": scores[a],
