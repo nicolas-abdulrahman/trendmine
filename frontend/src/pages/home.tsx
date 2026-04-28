@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Trophy, BookOpen, PartyPopper, ChevronRight } from "lucide-react";
+import { Trophy, Cpu, Dna, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import ThemeCard from "../components/ThemeCard";
 
@@ -26,8 +26,8 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             className="font-body text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto"
           >
-            Test your intuition against global trends. Pick a theme to start the
-            duel.
+            Teste seu conhecimento com o que é mais buscado no Wikipedia. Opa,
+            Sidney! :D
           </motion.p>
         </header>
 
@@ -44,20 +44,20 @@ export default function Home() {
             seed="football"
           />
           <ThemeCard
-            title="Books"
-            description="Literature, Authors, Genres"
-            icon={<BookOpen size={48} strokeWidth={1.5} />}
+            title="tecnology"
+            description="Programming languages, New tech, Algorithms"
+            icon={<Cpu size={48} strokeWidth={1.5} />}
             colorClass="bg-surface-container-high hover:bg-surface-container-highest"
             iconBgClass="bg-tertiary-container"
             iconColorClass="text-on-tertiary-container"
             lineColorClass="bg-tertiary-container"
             delay={0.4}
-            seed="books"
+            seed="tecnology"
           />
           <ThemeCard
-            title="Events"
+            title="Science"
             description="History, Holidays, Festivals"
-            icon={<PartyPopper size={48} strokeWidth={1.5} />}
+            icon={<Dna size={48} strokeWidth={1.5} />}
             colorClass="bg-secondary-container/20 hover:bg-secondary-container/40"
             iconBgClass="bg-secondary-container"
             iconColorClass="text-on-secondary-container"

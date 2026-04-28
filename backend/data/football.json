@@ -1,0 +1,284 @@
+{
+  "global": {
+    "soccer": {
+      "competitions": [
+        { "query": "Copa do Mundo", "data": 100 },
+        { "query": "Mundial de Clubes", "data": 65 },
+        { "query": "Olimpíadas", "data": 85 },
+        { "query": "Bola de Ouro", "data": 70 },
+        { "query": "The Best FIFA", "data": 60 }
+      ],
+      "legends": [
+        { "query": "Pelé", "data": 88 },
+        { "query": "Maradona", "data": 82 },
+        { "query": "Lionel Messi", "data": 100 },
+        { "query": "Cristiano Ronaldo", "data": 98 },
+        { "query": "Zinedine Zidane", "data": 65 },
+        { "query": "Ronaldo Fenômeno", "data": 75 },
+        { "query": "Johan Cruyff", "data": 45 },
+        { "query": "Ronaldinho Gaúcho", "data": 80 },
+        { "query": "Marta", "data": 60 }
+      ]
+    }
+  },
+  "south_america": {
+    "soccer": {
+      "competitions": [
+        { "query": "Copa Libertadores", "data": 90 },
+        { "query": "Copa Sul-Americana", "data": 75 },
+        { "query": "Copa América", "data": 85 },
+        { "query": "Eliminatórias", "data": 70 }
+      ],
+      "historic_teams": [
+        { "query": "Boca Juniors", "data": 85 },
+        { "query": "River Plate", "data": 80 },
+        { "query": "Peñarol", "data": 55 },
+        { "query": "Nacional", "data": 50 },
+        { "query": "Colo-Colo", "data": 60 },
+        { "query": "Olimpia", "data": 45 }
+      ]
+    },
+    "countries": {
+      "Brazil": {
+        "soccer": {
+          "serie_a": [
+            { "query": "Flamengo", "data": 100 },
+            { "query": "Palmeiras", "data": 90 },
+            { "query": "Corinthians", "data": 95 },
+            { "query": "São Paulo", "data": 85 },
+            { "query": "Vasco da Gama", "data": 80 },
+            { "query": "Grêmio", "data": 75 },
+            { "query": "Atlético Mineiro", "data": 70 },
+            { "query": "Cruzeiro", "data": 72 },
+            { "query": "Fluminense", "data": 68 },
+            { "query": "Botafogo", "data": 65 },
+            { "query": "Internacional", "data": 66 },
+            { "query": "Bahia", "data": 60 },
+            { "query": "Fortaleza", "data": 58 }
+          ],
+          "serie_b_and_lower": [
+            { "query": "Ceará", "data": 55 },
+            { "query": "Sport", "data": 50 },
+            { "query": "Paysandu", "data": 45 },
+            { "query": "Remo", "data": 42 },
+            { "query": "Chapecoense", "data": 38 },
+            { "query": "Coritiba", "data": 40 }
+          ],
+          "culture_and_slang": [
+            { "query": "VAR", "data": 90 },
+            { "query": "Pênalti", "data": 85 },
+            { "query": "Cartola FC", "data": 80 },
+            { "query": "Z4", "data": 40 },
+            { "query": "Gol de Bicicleta", "data": 35 }
+          ]
+        },
+        "subregions": {
+          "sao_paulo": {
+            "soccer": {
+              "teams": [
+                { "query": "Palmeiras", "data": 90 },
+                { "query": "Corinthians", "data": 95 },
+                { "query": "São Paulo", "data": 85 },
+                { "query": "Santos", "data": 70 },
+                { "query": "Ponte Preta", "data": 30 },
+                { "query": "Guarani", "data": 28 },
+                { "query": "Juventus da Mooca", "data": 15 }
+              ],
+              "stadiums": [
+                { "query": "Morumbi", "data": 75 },
+                { "query": "Neo Química Arena", "data": 80 },
+                { "query": "Allianz Parque", "data": 78 },
+                { "query": "Vila Belmiro", "data": 60 }
+              ],
+              "icons": [
+                { "query": "Rogério Ceni", "data": 65 },
+                { "query": "Marcos", "data": 55 },
+                { "query": "Cássio", "data": 70 },
+                { "query": "Calleri", "data": 60 }
+              ],
+              "derbies": [
+                { "query": "Choque-Rei", "data": 45 },
+                { "query": "Derby Paulista", "data": 55 },
+                { "query": "San-São", "data": 35 }
+              ]
+            }
+          },
+          "rio_de_janeiro": {
+            "soccer": {
+              "teams": [
+                { "query": "Flamengo", "data": 100 },
+                { "query": "Vasco da Gama", "data": 80 },
+                { "query": "Fluminense", "data": 68 },
+                { "query": "Botafogo", "data": 65 },
+                { "query": "Bangu", "data": 18 }
+              ],
+              "stadiums": [
+                { "query": "Maracanã", "data": 90 },
+                { "query": "São Januário", "data": 65 },
+                { "query": "Nilton Santos", "data": 50 }
+              ],
+              "icons": [
+                { "query": "Zico", "data": 60 },
+                { "query": "Romário", "data": 65 },
+                { "query": "Gabigol", "data": 85 },
+                { "query": "Arrascaeta", "data": 75 }
+              ],
+              "derbies": [
+                { "query": "Fla-Flu", "data": 70 },
+                { "query": "Clássico dos Milhões", "data": 65 }
+              ]
+            }
+          },
+          "pernambuco": {
+            "soccer": {
+              "teams": [
+                { "query": "Sport Recife", "data": 50 },
+                { "query": "Santa Cruz", "data": 45 },
+                { "query": "Náutico", "data": 40 },
+                { "query": "Íbis", "data": 12 },
+                { "query": "Retrô", "data": 15 }
+              ],
+              "stadiums": [
+                { "query": "Ilha do Retiro", "data": 35 },
+                { "query": "Arruda", "data": 30 },
+                { "query": "Aflitos", "data": 25 },
+                { "query": "Arena de Pernambuco", "data": 40 }
+              ],
+              "icons": [
+                { "query": "Magrão", "data": 20 },
+                { "query": "Carlinhos Bala", "data": 18 },
+                { "query": "Diego Souza", "data": 55 },
+                { "query": "Juninho Pernambucano", "data": 45 }
+              ],
+              "derbies": [
+                { "query": "Clássico dos Clássicos", "data": 30 },
+                { "query": "Clássico das Multidões", "data": 35 }
+              ]
+            }
+          }
+        }
+      },
+      "Argentina": {
+        "soccer": {
+          "primera_division": [
+            { "query": "Boca Juniors", "data": 85 },
+            { "query": "River Plate", "data": 80 },
+            { "query": "Racing", "data": 50 },
+            { "query": "Independiente", "data": 48 }
+          ],
+          "stadiums": [
+            { "query": "La Bombonera", "data": 70 },
+            { "query": "El Monumental", "data": 65 }
+          ],
+          "icons": [
+            { "query": "Diego Maradona", "data": 80 },
+            { "query": "Juan Román Riquelme", "data": 55 },
+            { "query": "Emiliano Martínez", "data": 75 }
+          ]
+        }
+      }
+    }
+  },
+  "europe": {
+    "soccer": {
+      "competitions": [
+        { "query": "Champions League", "data": 95 },
+        { "query": "Eurocopa", "data": 85 },
+        { "query": "Europa League", "data": 65 }
+      ],
+      "elite_teams": [
+        { "query": "Real Madrid", "data": 100 },
+        { "query": "Barcelona", "data": 95 },
+        { "query": "Manchester City", "data": 90 },
+        { "query": "Bayern de Munique", "data": 80 },
+        { "query": "PSG", "data": 85 }
+      ]
+    },
+    "countries": {
+      "England": {
+        "soccer": {
+          "premier_league": [
+            { "query": "Arsenal", "data": 85 },
+            { "query": "Manchester United", "data": 88 },
+            { "query": "Liverpool", "data": 86 },
+            { "query": "Chelsea", "data": 80 }
+          ],
+          "stadiums": [
+            { "query": "Wembley", "data": 75 },
+            { "query": "Anfield", "data": 70 },
+            { "query": "Old Trafford", "data": 72 }
+          ]
+        }
+      },
+      "Spain": {
+        "soccer": {
+          "la_liga": [
+            { "query": "Real Madrid", "data": 100 },
+            { "query": "Barcelona", "data": 95 },
+            { "query": "Atlético de Madrid", "data": 65 }
+          ],
+          "stadiums": [
+            { "query": "Santiago Bernabéu", "data": 80 },
+            { "query": "Camp Nou", "data": 78 }
+          ]
+        }
+      }
+    }
+  },
+  "north_america": {
+    "soccer": {
+      "competitions": [
+        { "query": "CONCACAF Champions Cup", "data": 40 },
+        { "query": "Gold Cup", "data": 55 }
+      ]
+    },
+    "countries": {
+      "Mexico": {
+        "soccer": {
+          "liga_mx": [
+            { "query": "Club América", "data": 75 },
+            { "query": "Chivas Guadalajara", "data": 70 },
+            { "query": "Cruz Azul", "data": 60 },
+            { "query": "Pumas UNAM", "data": 55 },
+            { "query": "Tigres UANL", "data": 65 }
+          ],
+          "stadiums": [
+            { "query": "Estadio Azteca", "data": 68 },
+            { "query": "Estadio Akron", "data": 45 }
+          ],
+          "icons": [
+            { "query": "Hugo Sánchez", "data": 40 },
+            { "query": "Guillermo Ochoa", "data": 65 },
+            { "query": "Chicharito Hernández", "data": 60 }
+          ]
+        }
+      },
+      "Canada": {
+        "soccer": {
+          "mls_and_cpl": [
+            { "query": "Toronto FC", "data": 45 },
+            { "query": "CF Montréal", "data": 40 },
+            { "query": "Vancouver Whitecaps", "data": 38 },
+            { "query": "Forge FC", "data": 15 },
+            { "query": "Cavalry FC", "data": 12 }
+          ],
+          "stadiums": [
+            { "query": "BMO Field", "data": 30 },
+            { "query": "BC Place", "data": 28 },
+            { "query": "Saputo Stadium", "data": 20 }
+          ],
+          "icons": [
+            { "query": "Alphonso Davies", "data": 75 },
+            { "query": "Jonathan David", "data": 60 },
+            { "query": "Christine Sinclair", "data": 65 },
+            { "query": "Stephen Eustáquio", "data": 35 }
+          ],
+          "competitions": [
+            { "query": "Canadian Premier League", "data": 25 },
+            { "query": "Canadian Championship", "data": 30 }
+          ]
+        }
+      }
+    }
+  }
+}

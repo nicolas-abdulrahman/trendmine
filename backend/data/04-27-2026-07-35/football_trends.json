@@ -1,0 +1,5812 @@
+[
+    {
+        "inputUrlOrTerm": "futebol",
+        "searchTerm": "futebol",
+        "interestOverTime_timelineData": [
+            {
+                "time": "1769472000",
+                "formattedTime": "Jan 27, 2026",
+                "formattedAxisTime": "Jan 27",
+                "value": [
+                    26
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "26"
+                ]
+            },
+            {
+                "time": "1769558400",
+                "formattedTime": "Jan 28, 2026",
+                "formattedAxisTime": "Jan 28",
+                "value": [
+                    37
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "37"
+                ]
+            },
+            {
+                "time": "1769644800",
+                "formattedTime": "Jan 29, 2026",
+                "formattedAxisTime": "Jan 29",
+                "value": [
+                    39
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "39"
+                ]
+            },
+            {
+                "time": "1769731200",
+                "formattedTime": "Jan 30, 2026",
+                "formattedAxisTime": "Jan 30",
+                "value": [
+                    26
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "26"
+                ]
+            },
+            {
+                "time": "1769817600",
+                "formattedTime": "Jan 31, 2026",
+                "formattedAxisTime": "Jan 31",
+                "value": [
+                    41
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "41"
+                ]
+            },
+            {
+                "time": "1769904000",
+                "formattedTime": "Feb 1, 2026",
+                "formattedAxisTime": "Feb 1",
+                "value": [
+                    86
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "86"
+                ]
+            },
+            {
+                "time": "1769990400",
+                "formattedTime": "Feb 2, 2026",
+                "formattedAxisTime": "Feb 2",
+                "value": [
+                    32
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "32"
+                ]
+            },
+            {
+                "time": "1770076800",
+                "formattedTime": "Feb 3, 2026",
+                "formattedAxisTime": "Feb 3",
+                "value": [
+                    25
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "25"
+                ]
+            },
+            {
+                "time": "1770163200",
+                "formattedTime": "Feb 4, 2026",
+                "formattedAxisTime": "Feb 4",
+                "value": [
+                    35
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "35"
+                ]
+            },
+            {
+                "time": "1770249600",
+                "formattedTime": "Feb 5, 2026",
+                "formattedAxisTime": "Feb 5",
+                "value": [
+                    34
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "34"
+                ]
+            },
+            {
+                "time": "1770336000",
+                "formattedTime": "Feb 6, 2026",
+                "formattedAxisTime": "Feb 6",
+                "value": [
+                    26
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "26"
+                ]
+            },
+            {
+                "time": "1770422400",
+                "formattedTime": "Feb 7, 2026",
+                "formattedAxisTime": "Feb 7",
+                "value": [
+                    44
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "44"
+                ]
+            },
+            {
+                "time": "1770508800",
+                "formattedTime": "Feb 8, 2026",
+                "formattedAxisTime": "Feb 8",
+                "value": [
+                    100
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "100"
+                ]
+            },
+            {
+                "time": "1770595200",
+                "formattedTime": "Feb 9, 2026",
+                "formattedAxisTime": "Feb 9",
+                "value": [
+                    32
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "32"
+                ]
+            },
+            {
+                "time": "1770681600",
+                "formattedTime": "Feb 10, 2026",
+                "formattedAxisTime": "Feb 10",
+                "value": [
+                    23
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "23"
+                ]
+            },
+            {
+                "time": "1770768000",
+                "formattedTime": "Feb 11, 2026",
+                "formattedAxisTime": "Feb 11",
+                "value": [
+                    31
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "31"
+                ]
+            },
+            {
+                "time": "1770854400",
+                "formattedTime": "Feb 12, 2026",
+                "formattedAxisTime": "Feb 12",
+                "value": [
+                    37
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "37"
+                ]
+            },
+            {
+                "time": "1770940800",
+                "formattedTime": "Feb 13, 2026",
+                "formattedAxisTime": "Feb 13",
+                "value": [
+                    27
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "27"
+                ]
+            },
+            {
+                "time": "1771027200",
+                "formattedTime": "Feb 14, 2026",
+                "formattedAxisTime": "Feb 14",
+                "value": [
+                    35
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "35"
+                ]
+            },
+            {
+                "time": "1771113600",
+                "formattedTime": "Feb 15, 2026",
+                "formattedAxisTime": "Feb 15",
+                "value": [
+                    55
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "55"
+                ]
+            },
+            {
+                "time": "1771200000",
+                "formattedTime": "Feb 16, 2026",
+                "formattedAxisTime": "Feb 16",
+                "value": [
+                    58
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "58"
+                ]
+            },
+            {
+                "time": "1771286400",
+                "formattedTime": "Feb 17, 2026",
+                "formattedAxisTime": "Feb 17",
+                "value": [
+                    27
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "27"
+                ]
+            },
+            {
+                "time": "1771372800",
+                "formattedTime": "Feb 18, 2026",
+                "formattedAxisTime": "Feb 18",
+                "value": [
+                    25
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "25"
+                ]
+            },
+            {
+                "time": "1771459200",
+                "formattedTime": "Feb 19, 2026",
+                "formattedAxisTime": "Feb 19",
+                "value": [
+                    25
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "25"
+                ]
+            },
+            {
+                "time": "1771545600",
+                "formattedTime": "Feb 20, 2026",
+                "formattedAxisTime": "Feb 20",
+                "value": [
+                    25
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "25"
+                ]
+            },
+            {
+                "time": "1771632000",
+                "formattedTime": "Feb 21, 2026",
+                "formattedAxisTime": "Feb 21",
+                "value": [
+                    44
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "44"
+                ]
+            },
+            {
+                "time": "1771718400",
+                "formattedTime": "Feb 22, 2026",
+                "formattedAxisTime": "Feb 22",
+                "value": [
+                    52
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "52"
+                ]
+            },
+            {
+                "time": "1771804800",
+                "formattedTime": "Feb 23, 2026",
+                "formattedAxisTime": "Feb 23",
+                "value": [
+                    24
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "24"
+                ]
+            },
+            {
+                "time": "1771891200",
+                "formattedTime": "Feb 24, 2026",
+                "formattedAxisTime": "Feb 24",
+                "value": [
+                    23
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "23"
+                ]
+            },
+            {
+                "time": "1771977600",
+                "formattedTime": "Feb 25, 2026",
+                "formattedAxisTime": "Feb 25",
+                "value": [
+                    34
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "34"
+                ]
+            },
+            {
+                "time": "1772064000",
+                "formattedTime": "Feb 26, 2026",
+                "formattedAxisTime": "Feb 26",
+                "value": [
+                    41
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "41"
+                ]
+            },
+            {
+                "time": "1772150400",
+                "formattedTime": "Feb 27, 2026",
+                "formattedAxisTime": "Feb 27",
+                "value": [
+                    35
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "35"
+                ]
+            },
+            {
+                "time": "1772236800",
+                "formattedTime": "Feb 28, 2026",
+                "formattedAxisTime": "Feb 28",
+                "value": [
+                    34
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "34"
+                ]
+            },
+            {
+                "time": "1772323200",
+                "formattedTime": "Mar 1, 2026",
+                "formattedAxisTime": "Mar 1",
+                "value": [
+                    44
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "44"
+                ]
+            },
+            {
+                "time": "1772409600",
+                "formattedTime": "Mar 2, 2026",
+                "formattedAxisTime": "Mar 2",
+                "value": [
+                    29
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "29"
+                ]
+            },
+            {
+                "time": "1772496000",
+                "formattedTime": "Mar 3, 2026",
+                "formattedAxisTime": "Mar 3",
+                "value": [
+                    25
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "25"
+                ]
+            },
+            {
+                "time": "1772582400",
+                "formattedTime": "Mar 4, 2026",
+                "formattedAxisTime": "Mar 4",
+                "value": [
+                    27
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "27"
+                ]
+            },
+            {
+                "time": "1772668800",
+                "formattedTime": "Mar 5, 2026",
+                "formattedAxisTime": "Mar 5",
+                "value": [
+                    24
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "24"
+                ]
+            },
+            {
+                "time": "1772755200",
+                "formattedTime": "Mar 6, 2026",
+                "formattedAxisTime": "Mar 6",
+                "value": [
+                    21
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "21"
+                ]
+            },
+            {
+                "time": "1772841600",
+                "formattedTime": "Mar 7, 2026",
+                "formattedAxisTime": "Mar 7",
+                "value": [
+                    32
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "32"
+                ]
+            },
+            {
+                "time": "1772928000",
+                "formattedTime": "Mar 8, 2026",
+                "formattedAxisTime": "Mar 8",
+                "value": [
+                    42
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "42"
+                ]
+            },
+            {
+                "time": "1773014400",
+                "formattedTime": "Mar 9, 2026",
+                "formattedAxisTime": "Mar 9",
+                "value": [
+                    26
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "26"
+                ]
+            },
+            {
+                "time": "1773100800",
+                "formattedTime": "Mar 10, 2026",
+                "formattedAxisTime": "Mar 10",
+                "value": [
+                    24
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "24"
+                ]
+            },
+            {
+                "time": "1773187200",
+                "formattedTime": "Mar 11, 2026",
+                "formattedAxisTime": "Mar 11",
+                "value": [
+                    36
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "36"
+                ]
+            },
+            {
+                "time": "1773273600",
+                "formattedTime": "Mar 12, 2026",
+                "formattedAxisTime": "Mar 12",
+                "value": [
+                    30
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "30"
+                ]
+            },
+            {
+                "time": "1773360000",
+                "formattedTime": "Mar 13, 2026",
+                "formattedAxisTime": "Mar 13",
+                "value": [
+                    26
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "26"
+                ]
+            },
+            {
+                "time": "1773446400",
+                "formattedTime": "Mar 14, 2026",
+                "formattedAxisTime": "Mar 14",
+                "value": [
+                    34
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "34"
+                ]
+            },
+            {
+                "time": "1773532800",
+                "formattedTime": "Mar 15, 2026",
+                "formattedAxisTime": "Mar 15",
+                "value": [
+                    49
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "49"
+                ]
+            },
+            {
+                "time": "1773619200",
+                "formattedTime": "Mar 16, 2026",
+                "formattedAxisTime": "Mar 16",
+                "value": [
+                    29
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "29"
+                ]
+            },
+            {
+                "time": "1773705600",
+                "formattedTime": "Mar 17, 2026",
+                "formattedAxisTime": "Mar 17",
+                "value": [
+                    24
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "24"
+                ]
+            },
+            {
+                "time": "1773792000",
+                "formattedTime": "Mar 18, 2026",
+                "formattedAxisTime": "Mar 18",
+                "value": [
+                    32
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "32"
+                ]
+            },
+            {
+                "time": "1773878400",
+                "formattedTime": "Mar 19, 2026",
+                "formattedAxisTime": "Mar 19",
+                "value": [
+                    37
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "37"
+                ]
+            },
+            {
+                "time": "1773964800",
+                "formattedTime": "Mar 20, 2026",
+                "formattedAxisTime": "Mar 20",
+                "value": [
+                    26
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "26"
+                ]
+            },
+            {
+                "time": "1774051200",
+                "formattedTime": "Mar 21, 2026",
+                "formattedAxisTime": "Mar 21",
+                "value": [
+                    36
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "36"
+                ]
+            },
+            {
+                "time": "1774137600",
+                "formattedTime": "Mar 22, 2026",
+                "formattedAxisTime": "Mar 22",
+                "value": [
+                    55
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "55"
+                ]
+            },
+            {
+                "time": "1774224000",
+                "formattedTime": "Mar 23, 2026",
+                "formattedAxisTime": "Mar 23",
+                "value": [
+                    23
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "23"
+                ]
+            },
+            {
+                "time": "1774310400",
+                "formattedTime": "Mar 24, 2026",
+                "formattedAxisTime": "Mar 24",
+                "value": [
+                    23
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "23"
+                ]
+            },
+            {
+                "time": "1774396800",
+                "formattedTime": "Mar 25, 2026",
+                "formattedAxisTime": "Mar 25",
+                "value": [
+                    26
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "26"
+                ]
+            },
+            {
+                "time": "1774483200",
+                "formattedTime": "Mar 26, 2026",
+                "formattedAxisTime": "Mar 26",
+                "value": [
+                    58
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "58"
+                ]
+            },
+            {
+                "time": "1774569600",
+                "formattedTime": "Mar 27, 2026",
+                "formattedAxisTime": "Mar 27",
+                "value": [
+                    32
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "32"
+                ]
+            },
+            {
+                "time": "1774656000",
+                "formattedTime": "Mar 28, 2026",
+                "formattedAxisTime": "Mar 28",
+                "value": [
+                    37
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "37"
+                ]
+            },
+            {
+                "time": "1774742400",
+                "formattedTime": "Mar 29, 2026",
+                "formattedAxisTime": "Mar 29",
+                "value": [
+                    42
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "42"
+                ]
+            },
+            {
+                "time": "1774828800",
+                "formattedTime": "Mar 30, 2026",
+                "formattedAxisTime": "Mar 30",
+                "value": [
+                    24
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "24"
+                ]
+            },
+            {
+                "time": "1774915200",
+                "formattedTime": "Mar 31, 2026",
+                "formattedAxisTime": "Mar 31",
+                "value": [
+                    35
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "35"
+                ]
+            },
+            {
+                "time": "1775001600",
+                "formattedTime": "Apr 1, 2026",
+                "formattedAxisTime": "Apr 1",
+                "value": [
+                    45
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "45"
+                ]
+            },
+            {
+                "time": "1775088000",
+                "formattedTime": "Apr 2, 2026",
+                "formattedAxisTime": "Apr 2",
+                "value": [
+                    38
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "38"
+                ]
+            },
+            {
+                "time": "1775174400",
+                "formattedTime": "Apr 3, 2026",
+                "formattedAxisTime": "Apr 3",
+                "value": [
+                    28
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "28"
+                ]
+            },
+            {
+                "time": "1775260800",
+                "formattedTime": "Apr 4, 2026",
+                "formattedAxisTime": "Apr 4",
+                "value": [
+                    41
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "41"
+                ]
+            },
+            {
+                "time": "1775347200",
+                "formattedTime": "Apr 5, 2026",
+                "formattedAxisTime": "Apr 5",
+                "value": [
+                    54
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "54"
+                ]
+            },
+            {
+                "time": "1775433600",
+                "formattedTime": "Apr 6, 2026",
+                "formattedAxisTime": "Apr 6",
+                "value": [
+                    25
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "25"
+                ]
+            },
+            {
+                "time": "1775520000",
+                "formattedTime": "Apr 7, 2026",
+                "formattedAxisTime": "Apr 7",
+                "value": [
+                    29
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "29"
+                ]
+            },
+            {
+                "time": "1775606400",
+                "formattedTime": "Apr 8, 2026",
+                "formattedAxisTime": "Apr 8",
+                "value": [
+                    38
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "38"
+                ]
+            },
+            {
+                "time": "1775692800",
+                "formattedTime": "Apr 9, 2026",
+                "formattedAxisTime": "Apr 9",
+                "value": [
+                    33
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "33"
+                ]
+            },
+            {
+                "time": "1775779200",
+                "formattedTime": "Apr 10, 2026",
+                "formattedAxisTime": "Apr 10",
+                "value": [
+                    28
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "28"
+                ]
+            },
+            {
+                "time": "1775865600",
+                "formattedTime": "Apr 11, 2026",
+                "formattedAxisTime": "Apr 11",
+                "value": [
+                    46
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "46"
+                ]
+            },
+            {
+                "time": "1775952000",
+                "formattedTime": "Apr 12, 2026",
+                "formattedAxisTime": "Apr 12",
+                "value": [
+                    61
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "61"
+                ]
+            },
+            {
+                "time": "1776038400",
+                "formattedTime": "Apr 13, 2026",
+                "formattedAxisTime": "Apr 13",
+                "value": [
+                    25
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "25"
+                ]
+            },
+            {
+                "time": "1776124800",
+                "formattedTime": "Apr 14, 2026",
+                "formattedAxisTime": "Apr 14",
+                "value": [
+                    34
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "34"
+                ]
+            },
+            {
+                "time": "1776211200",
+                "formattedTime": "Apr 15, 2026",
+                "formattedAxisTime": "Apr 15",
+                "value": [
+                    44
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "44"
+                ]
+            },
+            {
+                "time": "1776297600",
+                "formattedTime": "Apr 16, 2026",
+                "formattedAxisTime": "Apr 16",
+                "value": [
+                    31
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "31"
+                ]
+            },
+            {
+                "time": "1776384000",
+                "formattedTime": "Apr 17, 2026",
+                "formattedAxisTime": "Apr 17",
+                "value": [
+                    31
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "31"
+                ]
+            },
+            {
+                "time": "1776470400",
+                "formattedTime": "Apr 18, 2026",
+                "formattedAxisTime": "Apr 18",
+                "value": [
+                    44
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "44"
+                ]
+            },
+            {
+                "time": "1776556800",
+                "formattedTime": "Apr 19, 2026",
+                "formattedAxisTime": "Apr 19",
+                "value": [
+                    54
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "54"
+                ]
+            },
+            {
+                "time": "1776643200",
+                "formattedTime": "Apr 20, 2026",
+                "formattedAxisTime": "Apr 20",
+                "value": [
+                    31
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "31"
+                ]
+            },
+            {
+                "time": "1776729600",
+                "formattedTime": "Apr 21, 2026",
+                "formattedAxisTime": "Apr 21",
+                "value": [
+                    41
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "41"
+                ]
+            },
+            {
+                "time": "1776816000",
+                "formattedTime": "Apr 22, 2026",
+                "formattedAxisTime": "Apr 22",
+                "value": [
+                    37
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "37"
+                ]
+            },
+            {
+                "time": "1776902400",
+                "formattedTime": "Apr 23, 2026",
+                "formattedAxisTime": "Apr 23",
+                "value": [
+                    30
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "30"
+                ]
+            },
+            {
+                "time": "1776988800",
+                "formattedTime": "Apr 24, 2026",
+                "formattedAxisTime": "Apr 24",
+                "value": [
+                    26
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "26"
+                ]
+            },
+            {
+                "time": "1777075200",
+                "formattedTime": "Apr 25, 2026",
+                "formattedAxisTime": "Apr 25",
+                "value": [
+                    44
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "44"
+                ]
+            },
+            {
+                "time": "1777161600",
+                "formattedTime": "Apr 26, 2026",
+                "formattedAxisTime": "Apr 26",
+                "value": [
+                    53
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "53"
+                ]
+            },
+            {
+                "time": "1777248000",
+                "formattedTime": "Apr 27, 2026",
+                "formattedAxisTime": "Apr 27",
+                "value": [
+                    34
+                ],
+                "hasData": [
+                    true
+                ],
+                "formattedValue": [
+                    "34"
+                ],
+                "isPartial": true
+            }
+        ],
+        "interestOverTime_averages": [],
+        "interestBySubregion": [
+            {
+                "geoCode": "BR-BA",
+                "geoName": "State of Bahia",
+                "value": [
+                    100
+                ],
+                "formattedValue": [
+                    "100"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-SP",
+                "geoName": "State of São Paulo",
+                "value": [
+                    97
+                ],
+                "formattedValue": [
+                    "97"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-PB",
+                "geoName": "State of Paraíba",
+                "value": [
+                    91
+                ],
+                "formattedValue": [
+                    "91"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-PE",
+                "geoName": "State of Pernambuco",
+                "value": [
+                    90
+                ],
+                "formattedValue": [
+                    "90"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-SC",
+                "geoName": "State of Santa Catarina",
+                "value": [
+                    89
+                ],
+                "formattedValue": [
+                    "89"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-RJ",
+                "geoName": "State of Rio de Janeiro",
+                "value": [
+                    88
+                ],
+                "formattedValue": [
+                    "88"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-PA",
+                "geoName": "State of Pará",
+                "value": [
+                    87
+                ],
+                "formattedValue": [
+                    "87"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-PI",
+                "geoName": "State of Piauí",
+                "value": [
+                    87
+                ],
+                "formattedValue": [
+                    "87"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-RN",
+                "geoName": "State of Rio Grande do Norte",
+                "value": [
+                    87
+                ],
+                "formattedValue": [
+                    "87"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-PR",
+                "geoName": "State of Paraná",
+                "value": [
+                    87
+                ],
+                "formattedValue": [
+                    "87"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-AL",
+                "geoName": "State of Alagoas",
+                "value": [
+                    86
+                ],
+                "formattedValue": [
+                    "86"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-MG",
+                "geoName": "State of Minas Gerais",
+                "value": [
+                    86
+                ],
+                "formattedValue": [
+                    "86"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-AM",
+                "geoName": "State of Amazonas",
+                "value": [
+                    85
+                ],
+                "formattedValue": [
+                    "85"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-MS",
+                "geoName": "State of Mato Grosso do Sul",
+                "value": [
+                    84
+                ],
+                "formattedValue": [
+                    "84"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-SE",
+                "geoName": "State of Sergipe",
+                "value": [
+                    84
+                ],
+                "formattedValue": [
+                    "84"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-MA",
+                "geoName": "State of Maranhão",
+                "value": [
+                    83
+                ],
+                "formattedValue": [
+                    "83"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-AP",
+                "geoName": "State of Amapá",
+                "value": [
+                    83
+                ],
+                "formattedValue": [
+                    "83"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-ES",
+                "geoName": "State of Espírito Santo",
+                "value": [
+                    83
+                ],
+                "formattedValue": [
+                    "83"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-GO",
+                "geoName": "State of Goiás",
+                "value": [
+                    82
+                ],
+                "formattedValue": [
+                    "82"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-TO",
+                "geoName": "State of Tocantins",
+                "value": [
+                    82
+                ],
+                "formattedValue": [
+                    "82"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-MT",
+                "geoName": "State of Mato Grosso",
+                "value": [
+                    81
+                ],
+                "formattedValue": [
+                    "81"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-CE",
+                "geoName": "State of Ceará",
+                "value": [
+                    81
+                ],
+                "formattedValue": [
+                    "81"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-DF",
+                "geoName": "Federal District",
+                "value": [
+                    79
+                ],
+                "formattedValue": [
+                    "79"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-RO",
+                "geoName": "State of Rondônia",
+                "value": [
+                    75
+                ],
+                "formattedValue": [
+                    "75"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-AC",
+                "geoName": "State of Acre",
+                "value": [
+                    75
+                ],
+                "formattedValue": [
+                    "75"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-RS",
+                "geoName": "State of Rio Grande do Sul",
+                "value": [
+                    74
+                ],
+                "formattedValue": [
+                    "74"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "geoCode": "BR-RR",
+                "geoName": "State of Roraima",
+                "value": [
+                    72
+                ],
+                "formattedValue": [
+                    "72"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            }
+        ],
+        "interestByCity": [
+            {
+                "coordinates": {
+                    "lat": -23.1490745,
+                    "lng": -50.5197457
+                },
+                "geoName": "Santa Mariana",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -24.044197,
+                    "lng": -53.0066234
+                },
+                "geoName": "Moreira Sales",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -30.0880438,
+                    "lng": -51.7279954
+                },
+                "geoName": "Arroio dos Ratos",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -7.0390507,
+                    "lng": -35.6300977
+                },
+                "geoName": "Alagoa Grande",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -20.5584753,
+                    "lng": -44.8698308
+                },
+                "geoName": "Carmo da Mata",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.4649748,
+                    "lng": -49.2246518
+                },
+                "geoName": "Novo Horizonte",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -24.1896991,
+                    "lng": -48.5300136
+                },
+                "geoName": "Guapiara",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.2489466,
+                    "lng": -45.5077946
+                },
+                "geoName": "Santana da Vargem",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.3050364,
+                    "lng": -53.8189127
+                },
+                "geoName": "Ivinhema",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.9972026,
+                    "lng": -47.512814
+                },
+                "geoName": "Capivari",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.4706831,
+                    "lng": -41.1095274
+                },
+                "geoName": "São Francisco de Itabapoana",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -10.6902297,
+                    "lng": -39.8556824
+                },
+                "geoName": "Itiúba",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -11.7956851,
+                    "lng": -37.9447996
+                },
+                "geoName": "Esplanada",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -20.8173456,
+                    "lng": -49.5210713
+                },
+                "geoName": "Mirassol",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -27.8263074,
+                    "lng": -54.6630812
+                },
+                "geoName": "Santo Cristo",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -20.6286479,
+                    "lng": -49.6546435
+                },
+                "geoName": "Tanabi",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -7.7481295,
+                    "lng": -35.603719
+                },
+                "geoName": "Orobó",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -9.1756049,
+                    "lng": -40.973453
+                },
+                "geoName": "Casa Nova",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -13.017313,
+                    "lng": -42.6870565
+                },
+                "geoName": "Macaúbas",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.0400899,
+                    "lng": -41.0505751
+                },
+                "geoName": "Farol de São Thomé",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.3221066,
+                    "lng": -46.3688171
+                },
+                "geoName": "Monte Belo",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -28.8314284,
+                    "lng": -49.2351954
+                },
+                "geoName": "Balneário Rincão",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -10.459783,
+                    "lng": -40.1868956
+                },
+                "geoName": "Senhor do Bonfim",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -6.3113798,
+                    "lng": -35.4784912
+                },
+                "geoName": "Santo Antônio",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.3879944,
+                    "lng": -49.5076524
+                },
+                "geoName": "Fartura",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -12.4284443,
+                    "lng": -39.2509155
+                },
+                "geoName": "Santo Estêvão",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.6850833,
+                    "lng": -49.8235126
+                },
+                "geoName": "Siqueira Campos",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -8.1091223,
+                    "lng": -35.0838562
+                },
+                "geoName": "Moreno",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -19.9830855,
+                    "lng": -44.8580215
+                },
+                "geoName": "São Gonçalo do Pará",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.6053393,
+                    "lng": -46.914966
+                },
+                "geoName": "Santo Antônio de Posse",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -19.157438,
+                    "lng": -45.4447859
+                },
+                "geoName": "Abaeté",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -6.9686709,
+                    "lng": -35.7002289
+                },
+                "geoName": "Areia",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.6732766,
+                    "lng": -49.7471452
+                },
+                "geoName": "Lins",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -12.2837758,
+                    "lng": -40.4915946
+                },
+                "geoName": "Ruy Barbosa",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -0.7646218,
+                    "lng": -47.4542825
+                },
+                "geoName": "Maracanã",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -20.8423893,
+                    "lng": -49.6313976
+                },
+                "geoName": "Neves Paulista",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -20.4152317,
+                    "lng": -50.7631572
+                },
+                "geoName": "Palmeira D'Oeste",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -25.8681839,
+                    "lng": -50.3842316
+                },
+                "geoName": "São Mateus do Sul",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -24.1508954,
+                    "lng": -47.3203623
+                },
+                "geoName": "Santa Rita do Ribeira",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -9.309531,
+                    "lng": -35.9420041
+                },
+                "geoName": "Murici",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.1379949,
+                    "lng": -47.990137
+                },
+                "geoName": "Sertãozinho",
+                "value": [
+                    100
+                ],
+                "formattedValue": [
+                    "100"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.5837191,
+                    "lng": -47.5234139
+                },
+                "geoName": "Iracemápolis",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.5704516,
+                    "lng": -46.0409059
+                },
+                "geoName": "Biritiba-Mirim",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.1631542,
+                    "lng": -42.4257912
+                },
+                "geoName": "Bom Jardim",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.9607656,
+                    "lng": -46.3960797
+                },
+                "geoName": "São Vicente",
+                "value": [
+                    99
+                ],
+                "formattedValue": [
+                    "99"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -20.0421785,
+                    "lng": -47.7563994
+                },
+                "geoName": "Igarapava",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -25.6653993,
+                    "lng": -53.808299
+                },
+                "geoName": "Capanema",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -2.2414892,
+                    "lng": -49.4984804
+                },
+                "geoName": "Cametá",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.6221584,
+                    "lng": -49.0786259
+                },
+                "geoName": "Borborema",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -29.4548208,
+                    "lng": -51.3062852
+                },
+                "geoName": "Feliz",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -9.7825454,
+                    "lng": -36.1020569
+                },
+                "geoName": "São Miguel dos Campos",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -24.7300224,
+                    "lng": -48.108265
+                },
+                "geoName": "Cajati",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -20.4670046,
+                    "lng": -55.7872944
+                },
+                "geoName": "Aquidauana",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.1007393,
+                    "lng": -50.1858252
+                },
+                "geoName": "Pompéia",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.4029088,
+                    "lng": -45.5339578
+                },
+                "geoName": "Piranguinho",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -13.385508,
+                    "lng": -44.202014
+                },
+                "geoName": "Santa Maria da Vitória",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.9234077,
+                    "lng": -46.3885416
+                },
+                "geoName": "Caldas",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.0465199,
+                    "lng": -50.0720282
+                },
+                "geoName": "Cambará",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.4069762,
+                    "lng": -48.5052392
+                },
+                "geoName": "Taquaritinga",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -20.9870761,
+                    "lng": -47.6531065
+                },
+                "geoName": "Brodowski",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.3718457,
+                    "lng": -48.1841739
+                },
+                "geoName": "Guareí",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.5957703,
+                    "lng": -46.8877455
+                },
+                "geoName": "São José do Rio Pardo",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -3.6852038,
+                    "lng": -39.5857655
+                },
+                "geoName": "Itapagé",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -16.9657527,
+                    "lng": -49.231423
+                },
+                "geoName": "Hidrolândia",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.5465581,
+                    "lng": -47.1906632
+                },
+                "geoName": "Mairinque",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -12.3713805,
+                    "lng": -38.3852123
+                },
+                "geoName": "Catu",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.2103852,
+                    "lng": -47.5247679
+                },
+                "geoName": "Porto Feliz",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.7675446,
+                    "lng": -46.2220761
+                },
+                "geoName": "Itapeva",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.5367935,
+                    "lng": -43.0129853
+                },
+                "geoName": "São João Nepomuceno",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.8916151,
+                    "lng": -46.4244141
+                },
+                "geoName": "Cubatão",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -4.4338427,
+                    "lng": -41.4537623
+                },
+                "geoName": "Pedro II",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.9678823,
+                    "lng": -46.3288865
+                },
+                "geoName": "Santos",
+                "value": [
+                    93
+                ],
+                "formattedValue": [
+                    "93"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.5513436,
+                    "lng": -45.7342636
+                },
+                "geoName": "Paraguaçu",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.2664186,
+                    "lng": -51.0527244
+                },
+                "geoName": "Ibiporã",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -8.3748772,
+                    "lng": -35.4551341
+                },
+                "geoName": "Amaraji",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -1.2982048,
+                    "lng": -48.1570434
+                },
+                "geoName": "Santa Isabel do Pará",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -24.0088727,
+                    "lng": -46.4125034
+                },
+                "geoName": "Praia Grande",
+                "value": [
+                    92
+                ],
+                "formattedValue": [
+                    "92"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -10.1249995,
+                    "lng": -36.1761498
+                },
+                "geoName": "Coruripe",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.2076722,
+                    "lng": -47.6048899
+                },
+                "geoName": "Serrana",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -10.8364886,
+                    "lng": -38.5439651
+                },
+                "geoName": "Ribeira do Pombal",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.7442175,
+                    "lng": -46.3975293
+                },
+                "geoName": "Rio Grande da Serra",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -25.369176,
+                    "lng": -49.4505686
+                },
+                "geoName": "Campo Magro",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -24.1089373,
+                    "lng": -49.3356859
+                },
+                "geoName": "Itararé",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.1942185,
+                    "lng": -48.1594295
+                },
+                "geoName": "Barrinha",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -20.6456819,
+                    "lng": -47.2753293
+                },
+                "geoName": "Patrocínio Paulista",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.6118831,
+                    "lng": -46.0577071
+                },
+                "geoName": "Cambuí",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.5288756,
+                    "lng": -46.6436425
+                },
+                "geoName": "Caconde",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -20.7305771,
+                    "lng": -48.0540652
+                },
+                "geoName": "Morro Agudo",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -24.7154583,
+                    "lng": -47.875829
+                },
+                "geoName": "Pariquera-Açu",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -28.7087726,
+                    "lng": -51.9397875
+                },
+                "geoName": "Serafina Corrêa",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.9251224,
+                    "lng": -45.4616987
+                },
+                "geoName": "Pindamonhangaba",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.4847922,
+                    "lng": -51.7932899
+                },
+                "geoName": "Marialva",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -24.1817994,
+                    "lng": -46.7850334
+                },
+                "geoName": "Itanhaém",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.1827465,
+                    "lng": -50.6456587
+                },
+                "geoName": "Cornélio Procópio",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.5310431,
+                    "lng": -47.2550228
+                },
+                "geoName": "Alumínio",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.573223,
+                    "lng": -47.1731269
+                },
+                "geoName": "Artur Nogueira",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -4.7158559,
+                    "lng": -37.3547456
+                },
+                "geoName": "Icapuí",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.3555044,
+                    "lng": -46.8785941
+                },
+                "geoName": "Cajamar",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.8993818,
+                    "lng": -49.6251185
+                },
+                "geoName": "Santa Cruz do Rio Pardo",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.4152377,
+                    "lng": -50.0773225
+                },
+                "geoName": "Penápolis",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -20.5536189,
+                    "lng": -48.570285
+                },
+                "geoName": "Barretos",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.4139537,
+                    "lng": -50.5761151
+                },
+                "geoName": "Paraguaçu Paulista",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -20.8933441,
+                    "lng": -47.5925952
+                },
+                "geoName": "Batatais",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.4651029,
+                    "lng": -50.7608463
+                },
+                "geoName": "São Sebastião da Amoreira",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.9953615,
+                    "lng": -42.9146039
+                },
+                "geoName": "Sapucaia",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.3712987,
+                    "lng": -46.5231389
+                },
+                "geoName": "Muzambinho",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -20.949552,
+                    "lng": -48.4795365
+                },
+                "geoName": "Bebedouro",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.354255,
+                    "lng": -45.7793522
+                },
+                "geoName": "Cachoeira de Minas",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -20.0170955,
+                    "lng": -45.9795138
+                },
+                "geoName": "Bambuí",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.1891863,
+                    "lng": -52.2004893
+                },
+                "geoName": "Nova Esperança",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -1.7221887,
+                    "lng": -48.8792698
+                },
+                "geoName": "Abaetetuba",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.013792,
+                    "lng": -42.8376099
+                },
+                "geoName": "Visconde do Rio Branco",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.9455303,
+                    "lng": -47.3126323
+                },
+                "geoName": "Monte Mor",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.7339708,
+                    "lng": -48.1110248
+                },
+                "geoName": "Américo Brasiliense",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.2131635,
+                    "lng": -49.6555394
+                },
+                "geoName": "Garça",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.2522523,
+                    "lng": -45.7035974
+                },
+                "geoName": "Santa Rita do Sapucaí",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -16.7088537,
+                    "lng": -49.091845
+                },
+                "geoName": "Senador Canedo",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -8.0075658,
+                    "lng": -35.0221895
+                },
+                "geoName": "São Lourenço da Mata",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.7144314,
+                    "lng": -47.4260259
+                },
+                "geoName": "Piedade",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -8.4893879,
+                    "lng": -35.7188463
+                },
+                "geoName": "Bonito",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.0928252,
+                    "lng": -45.5629603
+                },
+                "geoName": "Boa Esperança",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -4.1828786,
+                    "lng": -38.1300362
+                },
+                "geoName": "Beberibe",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.3176861,
+                    "lng": -46.2241105
+                },
+                "geoName": "Santa Isabel",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.8930428,
+                    "lng": -45.5939292
+                },
+                "geoName": "São Gonçalo do Sapucaí",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.1813407,
+                    "lng": -47.3845574
+                },
+                "geoName": "Leme",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.9340017,
+                    "lng": -50.5195856
+                },
+                "geoName": "Tupã",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -26.9259456,
+                    "lng": -53.004816
+                },
+                "geoName": "Saudades",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -26.4600177,
+                    "lng": -48.6109443
+                },
+                "geoName": "Balneário Barra do Sul",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.1318555,
+                    "lng": -48.977473
+                },
+                "geoName": "Catanduva",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.472994,
+                    "lng": -48.5637543
+                },
+                "geoName": "Barra Bonita",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.3699248,
+                    "lng": -45.5113164
+                },
+                "geoName": "Três Pontas",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.9289154,
+                    "lng": -47.0714922
+                },
+                "geoName": "Juquitiba",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.8323034,
+                    "lng": -46.1218268
+                },
+                "geoName": "Bertioga",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.0384814,
+                    "lng": -49.1659897
+                },
+                "geoName": "Cerqueira César",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -4.5848377,
+                    "lng": -42.8572386
+                },
+                "geoName": "União",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.8427785,
+                    "lng": -47.6048717
+                },
+                "geoName": "Rio das Pedras",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -7.8887727,
+                    "lng": -37.1171012
+                },
+                "geoName": "Monteiro",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.9948444,
+                    "lng": -46.2568678
+                },
+                "geoName": "Guarujá",
+                "value": [
+                    85
+                ],
+                "formattedValue": [
+                    "85"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.7171886,
+                    "lng": -43.0628041
+                },
+                "geoName": "Bicas",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.4217742,
+                    "lng": -49.0924714
+                },
+                "geoName": "Itaí",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.6031745,
+                    "lng": -48.8041443
+                },
+                "geoName": "Lençóis Paulista",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.5354088,
+                    "lng": -49.8569266
+                },
+                "geoName": "Promissão",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -11.3801768,
+                    "lng": -40.0068953
+                },
+                "geoName": "Capim Grosso",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.2140719,
+                    "lng": -46.8238911
+                },
+                "geoName": "Várzea Paulista",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.2980974,
+                    "lng": -50.0726882
+                },
+                "geoName": "Santo Antônio da Platina",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.157939,
+                    "lng": -49.9777202
+                },
+                "geoName": "Jacarezinho",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -19.0347794,
+                    "lng": -43.423
+                },
+                "geoName": "Conceição do Mato Dentro",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -20.9163728,
+                    "lng": -49.4487934
+                },
+                "geoName": "Bady Bassitt",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -25.979821,
+                    "lng": -52.5678016
+                },
+                "geoName": "Coronel Vivida",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.0106742,
+                    "lng": -48.2176007
+                },
+                "geoName": "Pitangueiras",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.6650996,
+                    "lng": -45.0116583
+                },
+                "geoName": "Cachoeira Paulista",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.3604911,
+                    "lng": -47.3798391
+                },
+                "geoName": "Araras",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -26.6331439,
+                    "lng": -48.6846608
+                },
+                "geoName": "Barra Velha",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.0972163,
+                    "lng": -47.7144578
+                },
+                "geoName": "Tietê",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.4445928,
+                    "lng": -51.8765044
+                },
+                "geoName": "Sarandi",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.5528204,
+                    "lng": -47.6986628
+                },
+                "geoName": "Luís Antônio",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -11.7910581,
+                    "lng": -38.3562554
+                },
+                "geoName": "Inhambupe",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -12.6191964,
+                    "lng": -38.2929948
+                },
+                "geoName": "Dias d'Ávila",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.1742516,
+                    "lng": -51.2559461
+                },
+                "geoName": "Indiana",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.2175846,
+                    "lng": -49.9505291
+                },
+                "geoName": "Marília",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.337997,
+                    "lng": -47.1733742
+                },
+                "geoName": "Conchal",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -25.2197507,
+                    "lng": -49.3459021
+                },
+                "geoName": "Itaperuçu",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.7836726,
+                    "lng": -47.2945086
+                },
+                "geoName": "Nova Odessa",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -3.9715688,
+                    "lng": -38.5276456
+                },
+                "geoName": "Itaitinga",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -24.3124682,
+                    "lng": -47.0016524
+                },
+                "geoName": "Peruíbe",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.7557422,
+                    "lng": -47.4147585
+                },
+                "geoName": "Santa Bárbara D'Oeste",
+                "value": [
+                    83
+                ],
+                "formattedValue": [
+                    "83"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -7.8478439,
+                    "lng": -35.7570657
+                },
+                "geoName": "Surubim",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -8.5969261,
+                    "lng": -38.5743503
+                },
+                "geoName": "Floresta",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -7.2290752,
+                    "lng": -35.8808337
+                },
+                "geoName": "Campina Grande",
+                "value": [
+                    83
+                ],
+                "formattedValue": [
+                    "83"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -30.8772854,
+                    "lng": -55.5392304
+                },
+                "geoName": "Santana do Livramento",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -7.5630149,
+                    "lng": -35.0131428
+                },
+                "geoName": "Goiana",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.4714626,
+                    "lng": -48.9790314
+                },
+                "geoName": "Agudos",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.9099384,
+                    "lng": -47.0626332
+                },
+                "geoName": "Campinas",
+                "value": [
+                    83
+                ],
+                "formattedValue": [
+                    "83"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -7.1315529,
+                    "lng": -34.9322771
+                },
+                "geoName": "Bayeux",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -15.118465,
+                    "lng": -40.0660682
+                },
+                "geoName": "Itororó",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -4.2719561,
+                    "lng": -41.7719409
+                },
+                "geoName": "Piripiri",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -8.0239207,
+                    "lng": -34.9784672
+                },
+                "geoName": "Camaragibe",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -25.3193102,
+                    "lng": -49.3042082
+                },
+                "geoName": "Almirante Tamandaré",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.2797384,
+                    "lng": -46.7452277
+                },
+                "geoName": "Francisco Morato",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.668163,
+                    "lng": -46.4617086
+                },
+                "geoName": "Mauá",
+                "value": [
+                    82
+                ],
+                "formattedValue": [
+                    "82"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.0204559,
+                    "lng": -45.5563555
+                },
+                "geoName": "Taubaté",
+                "value": [
+                    82
+                ],
+                "formattedValue": [
+                    "82"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -16.4051589,
+                    "lng": -49.2231553
+                },
+                "geoName": "Nerópolis",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -6.8897071,
+                    "lng": -38.5612185
+                },
+                "geoName": "Cajazeiras",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.6704101,
+                    "lng": -42.0792551
+                },
+                "geoName": "Itaocara",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -9.9084342,
+                    "lng": -36.3597871
+                },
+                "geoName": "Teotônio Vilela",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -20.4173291,
+                    "lng": -49.9702752
+                },
+                "geoName": "Votuporanga",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.0272962,
+                    "lng": -48.0352471
+                },
+                "geoName": "Pontal",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -21.7848272,
+                    "lng": -48.1786486
+                },
+                "geoName": "Araraquara",
+                "value": [
+                    82
+                ],
+                "formattedValue": [
+                    "82"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.6601008,
+                    "lng": -47.223489
+                },
+                "geoName": "Ibiúna",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.2987827,
+                    "lng": -45.9662542
+                },
+                "geoName": "Jacareí",
+                "value": [
+                    82
+                ],
+                "formattedValue": [
+                    "82"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -25.4700302,
+                    "lng": -50.6509459
+                },
+                "geoName": "Irati",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -4.3220187,
+                    "lng": -40.7092475
+                },
+                "geoName": "Ipu",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -17.734945,
+                    "lng": -49.1208516
+                },
+                "geoName": "Morrinhos",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -10.5087813,
+                    "lng": -39.0138034
+                },
+                "geoName": "Euclides da Cunha",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -20.1514708,
+                    "lng": -44.2010909
+                },
+                "geoName": "Brumadinho",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -27.4955748,
+                    "lng": -48.6553685
+                },
+                "geoName": "Biguaçu",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.5033899,
+                    "lng": -47.6170597
+                },
+                "geoName": "Araçoiaba da Serra",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -22.7650153,
+                    "lng": -47.1500274
+                },
+                "geoName": "Paulinia",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -18.4476442,
+                    "lng": -50.4551598
+                },
+                "geoName": "Quirinópolis",
+                "value": [
+                    0
+                ],
+                "formattedValue": [
+                    ""
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    false
+                ]
+            },
+            {
+                "coordinates": {
+                    "lat": -23.7166271,
+                    "lng": -46.8576421
+                },
+                "geoName": "Itapecerica da Serra",
+                "value": [
+                    81
+                ],
+                "formattedValue": [
+                    "81"
+                ],
+                "maxValueIndex": 0,
+                "hasData": [
+                    true
+                ]
+            }
+        ],
+        "interestByMetro": [],
+        "relatedTopics_top": [
+            {
+                "topic": {
+                    "mid": "/m/02vx4",
+                    "title": "Soccer",
+                    "type": "Sports"
+                },
+                "value": 100,
+                "formattedValue": "100",
+                "hasData": true,
+                "link": "/trends/explore?q=/m/02vx4&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/019lxm",
+                    "title": "Santos FC",
+                    "type": "Soccer club"
+                },
+                "value": 7,
+                "formattedValue": "7",
+                "hasData": true,
+                "link": "/trends/explore?q=/m/019lxm&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/019m42",
+                    "title": "São Paulo FC",
+                    "type": "Soccer club"
+                },
+                "value": 7,
+                "formattedValue": "7",
+                "hasData": true,
+                "link": "/trends/explore?q=/m/019m42&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/0gl2ny2",
+                    "title": "Soccer player",
+                    "type": "Career"
+                },
+                "value": 7,
+                "formattedValue": "7",
+                "hasData": true,
+                "link": "/trends/explore?q=/m/0gl2ny2&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/02mzct",
+                    "title": "Live television",
+                    "type": "Topic"
+                },
+                "value": 6,
+                "formattedValue": "6",
+                "hasData": true,
+                "link": "/trends/explore?q=/m/02mzct&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/011l78",
+                    "title": "Team",
+                    "type": "Topic"
+                },
+                "value": 5,
+                "formattedValue": "5",
+                "hasData": true,
+                "link": "/trends/explore?q=/m/011l78&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/g/1q6j34wgy",
+                    "title": "Football club",
+                    "type": "Association football"
+                },
+                "value": 3,
+                "formattedValue": "3",
+                "hasData": true,
+                "link": "/trends/explore?q=/g/1q6j34wgy&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/01b5r_",
+                    "title": "Women's association football",
+                    "type": "Sports"
+                },
+                "value": 2,
+                "formattedValue": "2",
+                "hasData": true,
+                "link": "/trends/explore?q=/m/01b5r_&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/030q7",
+                    "title": "FIFA World Cup",
+                    "type": "Soccer competition"
+                },
+                "value": 2,
+                "formattedValue": "2",
+                "hasData": true,
+                "link": "/trends/explore?q=/m/030q7&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/g/11np78nlsb",
+                    "title": "Futebol Hoje - Onde assistir",
+                    "type": "Software"
+                },
+                "value": 2,
+                "formattedValue": "2",
+                "hasData": true,
+                "link": "/trends/explore?q=/g/11np78nlsb&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/018xm",
+                    "title": "Ball",
+                    "type": "Sports equipment"
+                },
+                "value": 2,
+                "formattedValue": "2",
+                "hasData": true,
+                "link": "/trends/explore?q=/m/018xm&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/0c2lp",
+                    "title": "Club",
+                    "type": "Organization"
+                },
+                "value": 2,
+                "formattedValue": "2",
+                "hasData": true,
+                "link": "/trends/explore?q=/m/0c2lp&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/0119_9bh",
+                    "title": "Football in Brazil",
+                    "type": "Topic"
+                },
+                "value": 1,
+                "formattedValue": "1",
+                "hasData": true,
+                "link": "/trends/explore?q=/m/0119_9bh&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/01l3vx",
+                    "title": "France national football team",
+                    "type": "Soccer team"
+                },
+                "value": 1,
+                "formattedValue": "1",
+                "hasData": true,
+                "link": "/trends/explore?q=/m/01l3vx&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/02zm3",
+                    "title": "Federation Internationale de Football Association (FIFA)",
+                    "type": "Football association"
+                },
+                "value": 1,
+                "formattedValue": "1",
+                "hasData": true,
+                "link": "/trends/explore?q=/m/02zm3&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/g/12qhkykzj",
+                    "title": "Barra Futebol Clube",
+                    "type": "Soccer club"
+                },
+                "value": 0,
+                "formattedValue": "<1",
+                "hasData": true,
+                "link": "/trends/explore?q=/g/12qhkykzj&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/07yn7d",
+                    "title": "Campeonato Brasileiro de Futebol Feminino - Serie A1",
+                    "type": "Soccer competition"
+                },
+                "value": 0,
+                "formattedValue": "<1",
+                "hasData": true,
+                "link": "/trends/explore?q=/m/07yn7d&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/g/11c6dc27_y",
+                    "title": "Sport Club Corinthians Paulista",
+                    "type": "Soccer club"
+                },
+                "value": 0,
+                "formattedValue": "<1",
+                "hasData": true,
+                "link": "/trends/explore?q=/g/11c6dc27_y&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/g/11yvphdzht",
+                    "title": "Fut Ao Vivo",
+                    "type": "Software"
+                },
+                "value": 0,
+                "formattedValue": "<1",
+                "hasData": true,
+                "link": "/trends/explore?q=/g/11yvphdzht&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/0j3dycj",
+                    "title": "Capivariano Futebol Clube",
+                    "type": "Soccer club"
+                },
+                "value": 0,
+                "formattedValue": "<1",
+                "hasData": true,
+                "link": "/trends/explore?q=/m/0j3dycj&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/0gj949l",
+                    "title": "Sampaio Corrêa Futebol e Esporte",
+                    "type": "Soccer club"
+                },
+                "value": 0,
+                "formattedValue": "<1",
+                "hasData": true,
+                "link": "/trends/explore?q=/m/0gj949l&date=today+3-m&geo=BR"
+            }
+        ],
+        "relatedTopics_rising": [
+            {
+                "topic": {
+                    "mid": "/g/11yvphdzht",
+                    "title": "Fut Ao Vivo",
+                    "type": "Software"
+                },
+                "value": 29300,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=/g/11yvphdzht&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/034ks",
+                    "title": "Galileo Galilei",
+                    "type": "Astronomer"
+                },
+                "value": 12050,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=/m/034ks&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/07c0j",
+                    "title": "The Beatles",
+                    "type": "Rock band"
+                },
+                "value": 3250,
+                "formattedValue": "+3,250%",
+                "link": "/trends/explore?q=/m/07c0j&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/09q84",
+                    "title": "Jupiter",
+                    "type": "Planet"
+                },
+                "value": 3050,
+                "formattedValue": "+3,050%",
+                "link": "/trends/explore?q=/m/09q84&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/g/11v_0_r7g3",
+                    "title": "Football Live TV",
+                    "type": "Software"
+                },
+                "value": 2150,
+                "formattedValue": "+2,150%",
+                "link": "/trends/explore?q=/g/11v_0_r7g3&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/g/11mr_0vpym",
+                    "title": "2026 Campeonato Brasileiro Série A",
+                    "type": "Season"
+                },
+                "value": 2000,
+                "formattedValue": "+2,000%",
+                "link": "/trends/explore?q=/g/11mr_0vpym&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/01l3vx",
+                    "title": "France national football team",
+                    "type": "Soccer team"
+                },
+                "value": 950,
+                "formattedValue": "+950%",
+                "link": "/trends/explore?q=/m/01l3vx&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/0g45f",
+                    "title": "Altitude",
+                    "type": "Topic"
+                },
+                "value": 800,
+                "formattedValue": "+800%",
+                "link": "/trends/explore?q=/m/0g45f&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/g/12qhkykzj",
+                    "title": "Barra Futebol Clube",
+                    "type": "Soccer club"
+                },
+                "value": 600,
+                "formattedValue": "+600%",
+                "link": "/trends/explore?q=/g/12qhkykzj&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/07yn7d",
+                    "title": "Campeonato Brasileiro de Futebol Feminino - Serie A1",
+                    "type": "Soccer competition"
+                },
+                "value": 450,
+                "formattedValue": "+450%",
+                "link": "/trends/explore?q=/m/07yn7d&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/0gj949l",
+                    "title": "Sampaio Corrêa Futebol e Esporte",
+                    "type": "Soccer club"
+                },
+                "value": 450,
+                "formattedValue": "+450%",
+                "link": "/trends/explore?q=/m/0gj949l&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/02zm3",
+                    "title": "Federation Internationale de Football Association (FIFA)",
+                    "type": "Football association"
+                },
+                "value": 350,
+                "formattedValue": "+350%",
+                "link": "/trends/explore?q=/m/02zm3&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/0gh5z90",
+                    "title": "Associação Esportiva Velo Clube",
+                    "type": "Soccer club"
+                },
+                "value": 200,
+                "formattedValue": "+200%",
+                "link": "/trends/explore?q=/m/0gh5z90&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/032c08",
+                    "title": "Colombia national football team",
+                    "type": "Soccer team"
+                },
+                "value": 160,
+                "formattedValue": "+160%",
+                "link": "/trends/explore?q=/m/032c08&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/0j3dycj",
+                    "title": "Capivariano Futebol Clube",
+                    "type": "Soccer club"
+                },
+                "value": 140,
+                "formattedValue": "+140%",
+                "link": "/trends/explore?q=/m/0j3dycj&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/g/11c6dc27_y",
+                    "title": "Sport Club Corinthians Paulista",
+                    "type": "Soccer club"
+                },
+                "value": 100,
+                "formattedValue": "+100%",
+                "link": "/trends/explore?q=/g/11c6dc27_y&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/030q7",
+                    "title": "FIFA World Cup",
+                    "type": "Soccer competition"
+                },
+                "value": 70,
+                "formattedValue": "+70%",
+                "link": "/trends/explore?q=/m/030q7&date=today+3-m&geo=BR"
+            },
+            {
+                "topic": {
+                    "mid": "/m/01b5r_",
+                    "title": "Women's association football",
+                    "type": "Sports"
+                },
+                "value": 50,
+                "formattedValue": "+50%",
+                "link": "/trends/explore?q=/m/01b5r_&date=today+3-m&geo=BR"
+            }
+        ],
+        "relatedQueries_top": [
+            {
+                "query": "futebol hoje",
+                "value": 100,
+                "formattedValue": "100",
+                "hasData": true,
+                "link": "/trends/explore?q=futebol+hoje&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "jogo futebol",
+                "value": 70,
+                "formattedValue": "70",
+                "hasData": true,
+                "link": "/trends/explore?q=jogo+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "são paulo futebol clube",
+                "value": 67,
+                "formattedValue": "67",
+                "hasData": true,
+                "link": "/trends/explore?q=s%C3%A3o+paulo+futebol+clube&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "jogos futebol",
+                "value": 64,
+                "formattedValue": "64",
+                "hasData": true,
+                "link": "/trends/explore?q=jogos+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "futebol ao vivo",
+                "value": 62,
+                "formattedValue": "62",
+                "hasData": true,
+                "link": "/trends/explore?q=futebol+ao+vivo&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "santos futebol clube",
+                "value": 59,
+                "formattedValue": "59",
+                "hasData": true,
+                "link": "/trends/explore?q=santos+futebol+clube&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "jogo de futebol",
+                "value": 47,
+                "formattedValue": "47",
+                "hasData": true,
+                "link": "/trends/explore?q=jogo+de+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "jogos de futebol",
+                "value": 46,
+                "formattedValue": "46",
+                "hasData": true,
+                "link": "/trends/explore?q=jogos+de+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "brasil futebol",
+                "value": 44,
+                "formattedValue": "44",
+                "hasData": true,
+                "link": "/trends/explore?q=brasil+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "jogador de futebol",
+                "value": 40,
+                "formattedValue": "40",
+                "hasData": true,
+                "link": "/trends/explore?q=jogador+de+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "jogos futebol hoje",
+                "value": 34,
+                "formattedValue": "34",
+                "hasData": true,
+                "link": "/trends/explore?q=jogos+futebol+hoje&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "futebol feminino",
+                "value": 27,
+                "formattedValue": "27",
+                "hasData": true,
+                "link": "/trends/explore?q=futebol+feminino&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "jogos de hoje futebol",
+                "value": 22,
+                "formattedValue": "22",
+                "hasData": true,
+                "link": "/trends/explore?q=jogos+de+hoje+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "jogos de futebol de hoje",
+                "value": 22,
+                "formattedValue": "22",
+                "hasData": true,
+                "link": "/trends/explore?q=jogos+de+futebol+de+hoje&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "futebol do brasil",
+                "value": 22,
+                "formattedValue": "22",
+                "hasData": true,
+                "link": "/trends/explore?q=futebol+do+brasil&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "campo de futebol",
+                "value": 22,
+                "formattedValue": "22",
+                "hasData": true,
+                "link": "/trends/explore?q=campo+de+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "seleção brasileira de futebol",
+                "value": 20,
+                "formattedValue": "20",
+                "hasData": true,
+                "link": "/trends/explore?q=sele%C3%A7%C3%A3o+brasileira+de+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "futebol online",
+                "value": 19,
+                "formattedValue": "19",
+                "hasData": true,
+                "link": "/trends/explore?q=futebol+online&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "jogo futebol hoje",
+                "value": 19,
+                "formattedValue": "19",
+                "hasData": true,
+                "link": "/trends/explore?q=jogo+futebol+hoje&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "bola de futebol",
+                "value": 17,
+                "formattedValue": "17",
+                "hasData": true,
+                "link": "/trends/explore?q=bola+de+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "seleção brasileira x seleção francesa de futebol",
+                "value": 8,
+                "formattedValue": "8",
+                "hasData": true,
+                "link": "/trends/explore?q=sele%C3%A7%C3%A3o+brasileira+x+sele%C3%A7%C3%A3o+francesa+de+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "onde assistir seleção brasileira x seleção francesa de futebol",
+                "value": 5,
+                "formattedValue": "5",
+                "hasData": true,
+                "link": "/trends/explore?q=onde+assistir+sele%C3%A7%C3%A3o+brasileira+x+sele%C3%A7%C3%A3o+francesa+de+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "onde assistir seleção brasileira x seleção croata de futebol",
+                "value": 2,
+                "formattedValue": "2",
+                "hasData": true,
+                "link": "/trends/explore?q=onde+assistir+sele%C3%A7%C3%A3o+brasileira+x+sele%C3%A7%C3%A3o+croata+de+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "quem fez o primeiro gol na história das copas do mundo fifa de futebol masculino",
+                "value": 2,
+                "formattedValue": "2",
+                "hasData": true,
+                "link": "/trends/explore?q=quem+fez+o+primeiro+gol+na+hist%C3%B3ria+das+copas+do+mundo+fifa+de+futebol+masculino&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "flamengo x sampaio corrêa futebol e esporte",
+                "value": 2,
+                "formattedValue": "2",
+                "hasData": true,
+                "link": "/trends/explore?q=flamengo+x+sampaio+corr%C3%AAa+futebol+e+esporte&date=today+3-m&geo=BR"
+            }
+        ],
+        "relatedQueries_rising": [
+            {
+                "query": "onde assistir seleção brasileira x seleção francesa de futebol",
+                "value": 49800,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=onde+assistir+sele%C3%A7%C3%A3o+brasileira+x+sele%C3%A7%C3%A3o+francesa+de+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "seleção brasileira x seleção francesa de futebol",
+                "value": 26400,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=sele%C3%A7%C3%A3o+brasileira+x+sele%C3%A7%C3%A3o+francesa+de+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "onde assistir seleção brasileira x seleção croata de futebol",
+                "value": 18700,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=onde+assistir+sele%C3%A7%C3%A3o+brasileira+x+sele%C3%A7%C3%A3o+croata+de+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "quem fez o primeiro gol na história das copas do mundo fifa de futebol masculino",
+                "value": 18350,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=quem+fez+o+primeiro+gol+na+hist%C3%B3ria+das+copas+do+mundo+fifa+de+futebol+masculino&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "onde assistir santos futebol clube x club de regatas vasco da gama",
+                "value": 15600,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=onde+assistir+santos+futebol+clube+x+club+de+regatas+vasco+da+gama&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "onde assistir santos futebol clube x sport club corinthians paulista",
+                "value": 14150,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=onde+assistir+santos+futebol+clube+x+sport+club+corinthians+paulista&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "onde assistir são paulo futebol clube x cruzeiro esporte clube",
+                "value": 10850,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=onde+assistir+s%C3%A3o+paulo+futebol+clube+x+cruzeiro+esporte+clube&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "quem criou o biquíni de lacinho",
+                "value": 10500,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=quem+criou+o+biqu%C3%ADni+de+lacinho&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "galileu galilei descobriu quantas luas de júpiter",
+                "value": 8950,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=galileu+galilei+descobriu+quantas+luas+de+j%C3%BApiter&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "escalações de seleção brasileira x seleção francesa de futebol",
+                "value": 8450,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=escala%C3%A7%C3%B5es+de+sele%C3%A7%C3%A3o+brasileira+x+sele%C3%A7%C3%A3o+francesa+de+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "onde assistir santos futebol clube x clube do remo",
+                "value": 6700,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=onde+assistir+santos+futebol+clube+x+clube+do+remo&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "onde assistir sociedade esportiva palmeiras x guarani futebol clube",
+                "value": 6400,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=onde+assistir+sociedade+esportiva+palmeiras+x+guarani+futebol+clube&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "onde assistir esporte clube noroeste x santos futebol clube",
+                "value": 5950,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=onde+assistir+esporte+clube+noroeste+x+santos+futebol+clube&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "onde assistir são bernardo futebol clube x sport club corinthians paulista",
+                "value": 5750,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=onde+assistir+s%C3%A3o+bernardo+futebol+clube+x+sport+club+corinthians+paulista&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "onde assistir boston river x são paulo futebol clube",
+                "value": 5700,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=onde+assistir+boston+river+x+s%C3%A3o+paulo+futebol+clube&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "onde assistir coritiba x são paulo futebol clube",
+                "value": 5300,
+                "formattedValue": "Breakout",
+                "link": "/trends/explore?q=onde+assistir+coritiba+x+s%C3%A3o+paulo+futebol+clube&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "flamengo x sampaio corrêa futebol e esporte",
+                "value": 4000,
+                "formattedValue": "+4,000%",
+                "link": "/trends/explore?q=flamengo+x+sampaio+corr%C3%AAa+futebol+e+esporte&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "qual é o maior público oficial registrado em uma partida de futebol no mundo",
+                "value": 3700,
+                "formattedValue": "+3,700%",
+                "link": "/trends/explore?q=qual+%C3%A9+o+maior+p%C3%BAblico+oficial+registrado+em+uma+partida+de+futebol+no+mundo&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "estatísticas de seleção brasileira x seleção francesa de futebol",
+                "value": 3500,
+                "formattedValue": "+3,500%",
+                "link": "/trends/explore?q=estat%C3%ADsticas+de+sele%C3%A7%C3%A3o+brasileira+x+sele%C3%A7%C3%A3o+francesa+de+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "classificações de santos futebol clube x club de regatas vasco da gama",
+                "value": 2700,
+                "formattedValue": "+2,700%",
+                "link": "/trends/explore?q=classifica%C3%A7%C3%B5es+de+santos+futebol+clube+x+club+de+regatas+vasco+da+gama&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "onde assistir santos futebol clube x velo clube",
+                "value": 2550,
+                "formattedValue": "+2,550%",
+                "link": "/trends/explore?q=onde+assistir+santos+futebol+clube+x+velo+clube&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "onde assistir ponte preta x são paulo futebol clube",
+                "value": 2550,
+                "formattedValue": "+2,550%",
+                "link": "/trends/explore?q=onde+assistir+ponte+preta+x+s%C3%A3o+paulo+futebol+clube&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "classificações de esporte clube bahia x santos futebol clube",
+                "value": 2450,
+                "formattedValue": "+2,450%",
+                "link": "/trends/explore?q=classifica%C3%A7%C3%B5es+de+esporte+clube+bahia+x+santos+futebol+clube&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "seleção brasileira de futebol",
+                "value": 140,
+                "formattedValue": "+140%",
+                "link": "/trends/explore?q=sele%C3%A7%C3%A3o+brasileira+de+futebol&date=today+3-m&geo=BR"
+            },
+            {
+                "query": "são paulo futebol clube",
+                "value": 40,
+                "formattedValue": "+40%",
+                "link": "/trends/explore?q=s%C3%A3o+paulo+futebol+clube&date=today+3-m&geo=BR"
+            }
+        ],
+        "interestBy": []
+    }
+]

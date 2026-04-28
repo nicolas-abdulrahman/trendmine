@@ -8,7 +8,7 @@ import Battle from "./pages/battle";
 
 export default function App() {
   const [score, setScore] = useState(0);
-  const [best, setBest] = useState(12);
+  const [best, setBest] = useState(0);
   return (
     <div className="min-h-screen flex flex-col bg-background selection:bg-primary/20">
       <TrendmineNavBar score={score} best={best} />

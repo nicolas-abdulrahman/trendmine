@@ -12,28 +12,27 @@ interface CompetitorStats {
 }
 
 interface Competitor {
-  name: string;
-  stats: CompetitorStats;
+  readable_name: string;
+  wikipedia_link: string;
+  score: number;
 }
 
 interface BattleResponse {
-  seed: string;
-  theme: string;
-  competitor_a: Competitor;
-  competitor_b: Competitor;
-  all_candidates_scored: number;
+  a: Competitor;
+  b: Competitor;
 }
 
 async function competitorToTopic(
   id: string,
   competitor: Competitor,
 ): Promise<Topic> {
-  const imageUrl = await getTopicImage(competitor.name);
+  const imageUrl = await getTopicImage(competitor.wikipedia_link);
+
   return {
     id,
-    name: competitor.name,
+    name: competitor.readable_name,
     imageUrl: imageUrl,
-    searchVolume: competitor.stats.mean,
+    searchVolume: competitor.score,
     icon: "trending",
   };
 }
@@ -62,10 +61,10 @@ export default function Battle() {
       );
       if (!res.ok) throw new Error(`Server error: ${res.status}`);
       const data: BattleResponse = await res.json();
-      setBattleData(data);
+      console.log(data);
       const [left, right] = await Promise.all([
-        competitorToTopic("a", data.competitor_a),
-        competitorToTopic("b", data.competitor_b),
+        competitorToTopic("a", data.a),
+        competitorToTopic("b", data.b),
       ]);
       setLeftTopic(left);
       setRightTopic(right);
@@ -97,6 +96,10 @@ export default function Battle() {
         setBest((b) => Math.max(b, next));
         return next;
       });
+    } else {
+      setScore((s) => {
+        return 0;
+      });
     }
 
     window.setTimeout(() => {
@@ -112,12 +115,12 @@ export default function Battle() {
       <div className="w-full max-w-6xl relative z-10">
         <div className="text-center mb-12">
           <motion.span
-            key={battleData?.theme ?? seed}
+            key={seed}
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             className="bg-tertiary-container text-on-tertiary-container px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest mb-4 inline-block"
           >
-            {battleData?.theme ?? seed} Pulse
+            {seed} Pulse
           </motion.span>
           <motion.h1
             initial={{ opacity: 0, scale: 0.95 }}

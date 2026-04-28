@@ -1,8 +1,11 @@
+import json
+import time
+from dataclasses import asdict, dataclass
+
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from miner import SEEDS, mine
 from pytrends.request import TrendReq
-from miner import mine, SEEDS
-import time
 
 app = FastAPI(title="TrendMine API")
 
@@ -13,7 +16,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-pytrends = TrendReq(hl='pt-BR', tz=180)
+pytrends = TrendReq(hl="pt-BR", tz=180)
 
 
 @app.get("/seeds")
@@ -22,23 +25,38 @@ def list_seeds():
     return {"seeds": SEEDS}
 
 
+@dataclass
+class BattleOption:
+    readable_name: str
+    wikipedia_link: str
+    score: int
+
+
+@dataclass
+class BattleOut:
+    a: BattleOption
+    b: BattleOption
+
+
 @app.get("/battle")
 def get_battle(
-    seed: str = Query(default=None, description="Optional seed topic. Random if omitted."),
-    depth: int = Query(default=2, ge=1, le=4, description="Walk depth (1-4). Higher = more diverse."),
+    seed: str = Query(
+        default=None, description="Optional seed topic. Random if omitted."
+    ),
+    depth: int = Query(
+        default=2, ge=1, le=4, description="Walk depth (1-4). Higher = more diverse."
+    ),
 ):
-    """
-    Run the data mining algorithm and return a battle pair.
-
-    The algorithm:
-      1. Starts from seed (or picks random)
-      2. Walks the pytrends suggestion graph
-      3. Scores all found candidates mathematically (mean, std, CV)
-      4. Weighted-samples 2 using CV as weight
-
-    Returns the pair + their trend stats.
-    """
+    opcao_a = BattleOption(
+        readable_name="Náutico", wikipedia_link="Clube_Náutico_Capibaribe", score=250
+    )
+    opcao_b = BattleOption(
+        readable_name="Sport", wikipedia_link="Sport_Club_do_Recife", score=321
+    )
+    battle = BattleOut(a=opcao_a, b=opcao_b)
     try:
+        return asdict(battle)
+        return json.dumps(asdict(battle), indent=4, ensure_ascii=False)
         result = mine(seed=seed, depth=depth)
         return result
     except Exception as e:
@@ -53,16 +71,18 @@ def get_result(a: str, b: str):
     """
     try:
         time.sleep(1)
-        pytrends.build_payload([a, b], timeframe='now 7-d', geo='BR')
+        pytrends.build_payload([a, b], timeframe="now 7-d", geo="BR")
         df = pytrends.interest_over_time()
 
         if df.empty:
-            raise HTTPException(status_code=404, detail="No trend data found for this pair.")
+            raise HTTPException(
+                status_code=404, detail="No trend data found for this pair."
+            )
 
         score_a = round(float(df[a].mean()), 1)
         score_b = round(float(df[b].mean()), 1)
-        draw    = score_a == score_b
-        winner  = None if draw else (a if score_a > score_b else b)
+        draw = score_a == score_b
+        winner = None if draw else (a if score_a > score_b else b)
 
         return {
             "competitor_a": {"name": a, "score": score_a},
@@ -76,7 +96,9 @@ def get_result(a: str, b: str):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+
 if __name__ == "__main__":
     import uvicorn
+
     print("Starting API on http://127.0.0.1:8000")
     uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)

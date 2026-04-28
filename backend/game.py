@@ -1,32 +1,131 @@
-import wikipedia
 import random
 import re
+from pprint import pprint
+
+import ollama
+import wikipediaapi
 
 # Set language to Portuguese
-wikipedia.set_lang("pt")
+
+
+class Game:
+    category = "football"
+    points = 0
+
+
+wiki = wikipediaapi.Wikipedia(
+    user_agent="MeuJogoDeFutebol/1.0 (contato@email.com)", language="pt"
+)
+
+target_sections = [
+    "Carreira",
+    "Clubes",
+    "Seleção Brasileira",
+    "Seleção Nacional",
+    "Títulos",
+    "Conquistas",
+    "História",
+    "Ídolos",
+    "Jogadores notáveis",
+    "Rivalidades",
+    "Estatísticas",
+]
+
+
+def get_neighbours(seed):
+    num_links = 25
+    page = wiki.page(seed)
+    relevant_links = []
+    for section in page.sections:
+        pprint(section)
+        # Verifica se o título da seção é um dos que queremos
+        if section.title in target_sections:
+            # Pega os links que aparecem no texto desta seção
+            # (Usando a lógica de comparação de texto que vimos antes)
+            section_links = [l for l in page.links if l in section.text]
+            relevant_links.extend(section_links)
+            break
+    all_links = relevant_links
+    print(all_links)
+    selected_links = random.sample(all_links, min(num_links, len(all_links)))
+    selected_links = [a for a in selected_links if len(a.split()) < 4]
+    result = []
+    for link in selected_links:
+        result.append(evaluate(link))
+    result = list(zip(selected_links, result))
+    pprint(result)
+    top_two = sorted(result, key=lambda x: x[1], reverse=True)[:2]
+    return top_two
+
+
+def evaluate(query: str) -> float:
+    messages = [
+        {
+            "role": "system",
+            "content": "Your job is to classify if a given input is related to Soccer. Answer ONLY with a value between 0 to 1. Provide exactly one score per line. Do not add any extra text, letters, or explanation.",
+        },
+        {"role": "user", "content": query},
+    ]
+    response = ollama.chat(
+        # model="hf.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF:Q3_K_M",
+        model="qwen2.5:1.5b",
+        messages=messages,
+        options={
+            "num_ctx": 128,  # SHRINK THE SCRATCHPAD: Only reserve RAM for 512 tokens
+            "temperature": 0.1,  # Make it strictly logical, no creative rambling
+        },
+    )
+    print(response)
+    response_text = response["message"]["content"]
+    print(response_text)
+    try:
+        return float(response_text)
+    except ValueError:
+        return 0.0
+
+    scores = []
+    response_lines = response_text.strip().split("\n")
+    for line in response_lines:
+        try:
+            scores.append(float(line.strip()))
+        except ValueError:
+            scores.append(0.01)
+
+    while len(scores) < len(queries):
+        scores.append(0.02)
+    return scores[: len(queries)]
+
+
+if __name__ == "__main__":
+    from users import TEAMS
+
+    neighbours = get_neighbours(TEAMS[0])
+    pprint(neighbours)
+
 
 def complex_refinery(raw_title):
     """
-    A complex refinery that uses Regex to transform raw Wikipedia 
+    A complex refinery that uses Regex to transform raw Wikipedia
     titles into clean, searchable Google Trends terms.
     """
     # 1. Remove disambiguation parentheses: "Neymar (futebolista)" -> "Neymar"
     # It handles nested or multiple parentheses
-    clean = re.sub(r'\s*\([^)]*\)', '', raw_title)
-    
+    clean = re.sub(r"\s*\([^)]*\)", "", raw_title)
+
     # 2. Remove "Category:" or "Categoria:" prefixes
-    clean = re.sub(r'^(Category|Categoria):', '', clean, flags=re.IGNORECASE)
-    
+    clean = re.sub(r"^(Category|Categoria):", "", clean, flags=re.IGNORECASE)
+
     # 3. Strip leading/trailing whitespace and underscores
-    clean = clean.replace('_', ' ').strip()
-    
-    # 4. Complexity Check: If the title is too long (likely a description, not an entity), 
+    clean = clean.replace("_", " ").strip()
+
+    # 4. Complexity Check: If the title is too long (likely a description, not an entity),
     # we truncate it to the first 4 words to keep it "searchable."
     words = clean.split()
     if len(words) > 4:
         clean = " ".join(words[:4])
-        
+
     return clean
+
 
 def stochastic_data_miner():
     """
@@ -39,21 +138,23 @@ def stochastic_data_miner():
         # Step 1: Stochastic Jump
         random_page_title = wikipedia.random(pages=1)
         page = wikipedia.page(random_page_title, auto_suggest=False)
-        
+
         # Step 2: Extract Categories (Filtering out 'Hidden' or 'Maintenance' categories)
         # We look for categories that don't contain "Artigos" or "!Esboços"
-        valid_themes = [c for c in page.categories if "Artigos" not in c and "!" not in c]
-        
+        valid_themes = [
+            c for c in page.categories if "Artigos" not in c and "!" not in c
+        ]
+
         if not valid_themes:
-            return stochastic_data_miner() # Retry if no good theme found
-            
+            return stochastic_data_miner()  # Retry if no good theme found
+
         chosen_theme = random.choice(valid_themes)
         clean_theme = complex_refinery(chosen_theme)
 
         # Step 3: Get 'Neighbors' from the Category
         cat_page = wikipedia.page(chosen_theme, auto_suggest=False)
         neighbors = cat_page.links
-        
+
         if len(neighbors) < 2:
             return stochastic_data_miner()
 
@@ -66,74 +167,9 @@ def stochastic_data_miner():
             "theme": clean_theme,
             "competitor_a": entity_a,
             "competitor_b": entity_b,
-            "seed_origin": random_page_title
+            "seed_origin": random_page_title,
         }
 
     except Exception:
         # Catching DisambiguationError or PageError and recursing
         return stochastic_data_miner()
-
-
-
-from pytrends.request import TrendReq
-import time
-
-# Initialize Pytrends (Brazil context)
-# hl='pt-BR' ensures we use Portuguese, tz=180 is Brazil's offset
-pytrends = TrendReq(hl='pt-BR', tz=180)
-
-def play_trends_game():
-    print("🎮 Bem-vindo ao TrendMine 2026!")
-    score = 0
-    
-    while True:
-        # 1. MINE: Get our random pair from the miner we built
-        data = stochastic_data_miner() # Using your previous function
-        competitors = [data['competitor_a'], data['competitor_b']]
-        
-        print(f"\n📂 TEMA: {data['theme']}")
-        print(f"1. {competitors[0]}")
-        print(f"2. {competitors[1]}")
-        
-        choice = input("Quem teve mais buscas nos últimos 7 dias? (1 ou 2, ou 'sair'): ")
-        if choice.lower() == 'sair': break
-
-        # 2. FETCH: Get data from Google Trends
-        print("📊 Consultando o Google Trends...")
-        try:
-            pytrends.build_payload(competitors, timeframe='now 7-d', geo='BR')
-            df = pytrends.interest_over_time()
-            
-            if df.empty:
-                print("⚠️  Dados insuficientes para essa dupla. Pulando...")
-                continue
-
-            # 3. COMPARE: Calculate mean interest
-            avg_a = df[competitors[0]].mean()
-            avg_b = df[competitors[1]].mean()
-            
-            winner_idx = "1" if avg_a > avg_b else "2"
-            winner_name = competitors[0] if avg_a > avg_b else competitors[1]
-
-            # 4. RESULTS
-            print(f"\n📈 RESULTADOS:")
-            print(f"{competitors[0]}: {round(avg_a, 1)}")
-            print(f"{competitors[1]}: {round(avg_b, 1)}")
-
-            if choice == winner_idx:
-                score += 1
-                print(f"✅ ACERTOU! O vencedor é {winner_name}. Combo: {score}")
-            else:
-                print(f"❌ ERROU! {winner_name} dominou as buscas.")
-                score = 0
-                
-            # Anti-rate limit sleep (Google is sensitive!)
-            time.sleep(2) 
-
-        except Exception as e:
-            print(f"🤯 Erro na API: {e}. Vamos tentar outra dupla...")
-            time.sleep(5)
-    print(f"📍 Discovery Origin: {data['seed_origin']}")
-    print(f"📂 Detected Theme: {data['theme']}")
-    print(f"⚔️  Battle: {data['competitor_a']} vs {data['competitor_b']}")
-play_trends_game()

@@ -18,9 +18,13 @@ Algorithm:
 
 import random
 import time
+from pathlib import Path
+from pprint import pprint
 
 import numpy as np
-from pytrends.request import TrendReq
+import pytrends
+from pandas.io.api import read_json
+from pytrends.request import TrendReq, json
 
 pytrends = TrendReq(hl="pt-BR", tz=180)
 
@@ -42,6 +46,114 @@ SEEDS = [
     "economia",
     "saúde",
 ]
+
+
+def _getzrelated_queries():
+    file = read_json(Path(r".\data\04-27-2026-07-35\football_trends.json"))
+    # sample = file[0]["relatedQueries_rising"].sample(5)
+
+    def filter():
+        from transformers import AutoModelForCausalLM, AutoTokenizer
+
+        model_name = "Qwen/Qwen2.5-0.5B-Instruct"
+
+        model = AutoModelForCausalLM.from_pretrained(
+            model_name, torch_dtype="auto", device_map="auto"
+        )
+        tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+        messages = [
+            # 1. The Rules (System)
+            {
+                "role": "system",
+                "content": """You are a strict data extraction API for a Brazilian football game.
+                RULES:
+                1. If the query is related to football, set "relevant" to true and extract the core entities.
+                2. If completely unrelated, set "relevant" to false and "core_query" to null.
+                3. You MUST respond in pure JSON format.""",
+            },
+            # --- YOUR EXAMPLES START HERE ---
+            # Example 1: A good query with filler words
+            {
+                "role": "user",
+                "content": "onde assistir Sao paulo x palmeiras",
+            },
+            {
+                "role": "assistant",
+                "content": '{"relevant": true, "core_query": "Sao paulo x palmeiras"}',
+            },
+            {
+                "role": "user",
+                "content": "estatísticas de seleção brasileira x seleção francesa de futebol hoje",
+            },
+            {
+                "role": "assistant",
+                "content": '{"relevant": true, "core_query": "seleção brasileira x seleção francesa de futebol"}',
+            },
+        ]
+        text = tokenizer.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True
+        )
+        model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
+
+        generated_ids = model.generate(**model_inputs, max_new_tokens=512)
+        generated_ids = [
+            output_ids[len(input_ids) :]
+            for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)
+        ]
+
+        response_text = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[
+            0
+        ]
+        return response_text
+
+    return filter()
+
+
+def get_related_queries(user):
+    with open(Path(f"data/football.json"), "r", encoding="utf-8") as f:
+        data = json.load(f)
+    all_categories = list(data.keys())
+
+    # 3. Pick one category at random
+    chosen_category = random.choice(all_categories)
+
+    # 4. Grab the list of words associated with that category
+    category_words = data[chosen_category]
+    return random.sample(category_words, 2)
+
+
+def get_random_valid_topics(
+    seed: str, depth: int, cookie: str, proxies
+) -> list[object]:
+    import requests
+
+    kw_list = [seed]  # Futebol /m/02vx4
+
+    session = requests.Session()
+    session.headers.update({"Cookie": cookie})
+
+    pytrend = TrendReq(hl="pt-BR", tz=180, proxies=proxies)
+    pytrend.build_payload(kw_list, timeframe="today 12-m", geo="BR")
+
+    original_get_data = pytrend._get_data
+
+    def intercept_json(*args, **kwargs):
+        raw_json = original_get_data(*args, **kwargs)
+        print("\n--- RAW GOOGLE JSON RESPONSE ---")
+        print(json.dumps(raw_json, indent=2))
+        print("--------------------------------\n")
+        # Return it back to pytrends so it can try (and possibly fail) to parse it
+        return raw_json
+
+    pytrend._get_data = intercept_json
+    try:
+        topics = pytrend.related_topics()
+    except IndexError:
+        print("crashed as expected")
+    return []
+    # top_football = topics["m/02vx4"]["top"]
+    # return top_football.sample(10)
 
 
 def walk(seed: str, depth: int = 2) -> list[dict]:
@@ -143,7 +255,7 @@ def weighted_sample(scores: dict[str, dict], k: int = 2) -> list[str]:
     return chosen
 
 
-def mine(seed: str = None, depth: int = 2) -> dict:
+def mine(seed: str = "", depth: int = 2) -> dict:
     """
     Full pipeline:
       seed → walk → score → sample → return battle pair
@@ -154,6 +266,9 @@ def mine(seed: str = None, depth: int = 2) -> dict:
     # 1. Walk the graph
     candidates_raw = walk(seed, depth=depth)
 
+    print("Canditates raw:")
+    pprint(candidates_raw, sort_dicts=False)
+    print("--------------")
     if len(candidates_raw) < 2:
         # fallback: retry with a fresh seed
         return mine(depth=depth)
@@ -170,12 +285,20 @@ def mine(seed: str = None, depth: int = 2) -> dict:
     # 2. Score them
     scores = score_candidates(unique)
 
+    print("Scores:")
+    pprint(scores, sort_dicts=False)
+    print("--------------")
+
     # Need at least 2 scoreable candidates
     if len(scores) < 2:
         return mine(depth=depth)
 
     # 3. Weighted sample
     pair = weighted_sample(scores, k=2)
+
+    print("Pair:")
+    pprint(pair, sort_dicts=False)
+    print("--------------")
 
     a, b = pair[0], pair[1]
 
