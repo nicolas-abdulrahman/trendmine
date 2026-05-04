@@ -1,0 +1,31 @@
+{
+  "Pernambucano - Série A1": [
+    {
+      "name": "Sport",
+      "page": "Sport_Club_do_Recife",
+      "score": 9002
+    },
+    {
+      "name": "Náutico",
+      "page": "Clube_Náutico_Capibaribe",
+      "score": 6269
+    },
+    {
+      "name": "Santa Cruz",
+      "page": "Santa_Cruz_Futebol_Clube",
+      "score": 7460
+    },
+    {
+      "name": "Vitória-PE",
+      "page": "Associação_Acadêmica_e_Desportiva_Vitória_das_Tabocas",
+      "score": 639
+    }
+  ],
+  "bob": [
+    {
+      "name": "bob",
+      "page": "booob",
+      "score": 2
+    }
+  ]
+}
