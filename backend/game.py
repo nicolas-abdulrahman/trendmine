@@ -203,36 +203,55 @@ trivia_categories = {
     "tech": {
         "Programming_languages": [
             "C_(programming_language)",
-            "C_Sharp_(programming_language)",
-            "Clojure",
-            "Elixir_(programming_language)",
-            "Erlang_(programming_language)",
-            "Go_(programming_language)",
-            "Haskell",
-            "Java_(programming_language)",
-            "JavaScript",
-            "Julia_(programming_language)",
-            "Kotlin",
-            "Lisp_(programming_language)",
-            "Lua",
-            "Nim_(programming_language)",
-            "Perl",
-            "PHP",
-            "Python_(programming_language)",
-            "Ruby_(programming_language)",
-            "Swift_(programming_language)",
-            "TypeScript",
-            "Zig_(programming_language)",
-            "Rust_(programming_language)",
-            "Fortran",
-            "COBOL",
-            "Pascal_(programming_language)",
-            "Objective-C",
-            "Assembly_language",
-            "Smalltalk",
-            "Scala_(programming_language)",
-            "Dart_(programming_language)",
-            "OCaml"
+                "cxx", # This is the URL-safe encoding for C++ used by Wikipedia
+                "C_Sharp_(programming_language)",
+                "Java_(programming_language)",
+                "JavaScript",
+                "Python_(programming_language)",
+                "PHP",
+                "Ruby_(programming_language)",
+                "Swift_(programming_language)",
+                "Go_(programming_language)",
+                "Rust_(programming_language)",
+                "Kotlin",
+                "TypeScript",
+                "Dart_(programming_language)",
+                "Scala_(programming_language)",
+                "R_(programming_language)",
+                "Lua",
+                "Perl",
+                "Haskell",
+                "Erlang_(programming_language)",
+                "Elixir_(programming_language)",
+                "Clojure",
+                "Lisp_(programming_language)",
+                "Scheme_(programming_language)",
+                "OCaml",
+                "F_Sharp_(programming_language)",
+                "Fortran",
+                "COBOL",
+                "Ada_(programming_language)",
+                "Pascal_(programming_language)",
+                "Delphi_(software)",
+                "Assembly_language",
+                "SQL",
+                "Bash_(Unix_shell)",
+                "PowerShell",
+                "Julia_(programming_language)",
+                "MATLAB",
+                "Scratch_(programming_language)",
+                "Prolog",
+                "Smalltalk",
+                "Objective-C",
+                "Visual_Basic_(.NET)",
+                "ActionScript",
+                "Groovy_(programming_language)", # Apache Groovy
+                "Lua",
+                "Vim_script",
+                "AWK",
+                "APL_(programming_language)",
+                "Simula",
+                "Logo_(programming_language)"
         ],
         "software": [
             "1Password", "9GAG", "Adblock_Plus", "AllTrails", "Amazon_Prime_Video",
@@ -415,8 +434,11 @@ class Item:
     page: str
     score: int
 
-def get_first_caption(page_title: str) -> str:
-    url = "https://pt.wikipedia.org/w/api.php"
+def get_first_caption(page_title: str, seed) -> str:
+    if seed == "football":
+        url = "https://pt.wikipedia.org/w/api.php"
+    else:
+        url ="https://en.wikipedia.org/w/api.php"
     params = {
         "action": "parse",
         "page": page_title,
@@ -441,25 +463,47 @@ def get_first_caption(page_title: str) -> str:
         soup = BeautifulSoup(html, "html.parser")
 
         # Look for caption in infoboxes or tables
+        infobox = soup.find("table", class_="infobox")
+
+        if infobox:
+            # A. Tenta o <caption> primeiro (como você já fazia)
+            caption = infobox.find("caption")
+            if caption:
+                return caption.get_text(strip=True)
+
+            # B. Se não houver caption, busca o cabeçalho principal da Infobox
+            # Geralmente é um <th> com a classe 'infobox-above' ou 'infobox-title'
+            infobox_title = infobox.find(["th", "td"], class_=["infobox-above", "infobox-title"])
+            if infobox_title:
+                return infobox_title.get_text(strip=True)
+
+            # C. Fallback: Pega o primeiro <th> da tabela se for largo (colspan)
+            # Útil para páginas que não seguem o padrão estrito
+            first_th = infobox.find("th")
+            if first_th:
+                return first_th.get_text(strip=True)
+        # Fallback: if no caption, return the page title cleaned up
         caption = soup.find("caption")
         if caption:
             return caption.get_text(strip=True)
-
-        # Fallback: if no caption, return the page title cleaned up
         return page_title.replace("_", " ")
     except Exception:
         return page_title.replace("_", " ")
 
-def get_pageviews(wikipedia_name: str, days: int = 30) -> int:
+def get_pageviews(wikipedia_name: str,seed, days: int = 30) -> int:
     end = datetime.now(timezone.utc)
     start = end - timedelta(days=days)
 
     # Wikimedia API requires underscores instead of spaces
     slug = wikipedia_name.replace(" ", "_")
 
+    if seed == "football":
+        u= "pt"
+    else:
+        u="en"
     url = (
         f"https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article"
-        f"/pt.wikipedia/all-access/all-agents"
+        f"/{u}.wikipedia/all-access/all-agents"
         f"/{slug}"
         f"/daily"
         f"/{start.strftime('%Y%m%d')}00/{end.strftime('%Y%m%d')}00"
@@ -493,15 +537,16 @@ def get_query(seed: str, keys ) -> Item:
     wikipedia_slug = random.choice(trivia_categories[seed][random_key])
 
     # Fetch the name and score
-    name = get_first_caption(wikipedia_slug)
-    score = get_pageviews(wikipedia_slug)
-
-    return Item(
+    name = get_first_caption(wikipedia_slug, seed)
+    score = get_pageviews(wikipedia_slug, seed)
+    item = Item(
         name=name,
         page=wikipedia_slug,
         score=score
     )
+    pprint(item)
 
+    return item
 def save_to_json(section: str,
     teams: Dict[str, List[str]], output_path: Path = Path("data/teams.json")
 ):

@@ -1,63 +1,52 @@
-import json
+import pprint
 import requests
+import json
 
-# Certifique-se de que o servidor FastAPI esteja rodando na porta 8000
 BASE_URL = "http://127.0.0.1:8000"
 
-def testar_palpite_dinamico(seed="football"):
-    print(f"1. ⚔️ Solicitando uma nova batalha (Seed: {seed})...")
-    # Adicionando o parâmetro seed para garantir o contexto correto
-    response_get = requests.get(f"{BASE_URL}/battle?seed={seed}")
-
-    if response_get.status_code != 200:
-        print(f"❌ Erro ao buscar batalha: {response_get.text}")
+def run_test():
+    # 1. Start Battle
+    print("--- Testing GET /battle ---")
+    res = requests.get(f"{BASE_URL}/battle?seed=football")
+    if res.status_code != 200:
+        print(f"Failed: {res.text}")
         return
 
-    battle_data = response_get.json()
-    battle_id = battle_data["battle_id"]
+    data = res.json()
+    battle_id = data["battle_id"]
+    score_a = data["a"]["score"]
+    score_b = data["b"]["score"]
 
-    op_a = battle_data["a"]
-    op_b = battle_data["b"]
+    print(f"Received Battle: {data['a']['name']} ({score_a}) vs {data['b']['name']} ({score_b})")
 
-    print(f"✅ Batalha recebida! ID: {battle_id[:8]}...")
-    print(f"   Opção A: {op_a['name']} ({op_a['page']})")
-    print(f"   Opção B: {op_b['name']} ({op_b['page']})")
+    # 2. Simulate User Choice (Picking higher score)
+    # The frontend knows the scores, so it decides 'guess' locally
+    user_choice_is_correct = True # Simulating a correct click
 
-    # Tenta encontrar o Sport ou apenas escolhe a Opção A por padrão
-    palpite = "a"
-    nome_palpite = op_a['name']
-
-    if "Sport" in op_b['name']:
-        palpite = "b"
-        nome_palpite = op_b['name']
-    elif "Sport" in op_a['name']:
-        palpite = "a"
-        nome_palpite = op_a['name']
-    else:
-        print(f"⚠️ 'Sport' não veio nesta rodada. Palpitando na Opção A: {nome_palpite}")
-
-    print(f"\n2. 🎯 Enviando o palpite: '{palpite}' ({nome_palpite})...")
-
-    # Payload ajustado para o novo Pydantic BaseModel (GuessPayload)
+    print(f"\n--- Testing POST /battle/guess (Correct choice) ---")
     payload = {
         "battle_id": battle_id,
-        "guess": palpite
+        "guess": user_choice_is_correct
     }
 
-    response_post = requests.post(f"{BASE_URL}/battle/guess", json=payload)
+    res_guess = requests.post(f"{BASE_URL}/battle/guess", json=payload)
 
-    if response_post.status_code != 200:
-        print(f"❌ Erro ao enviar palpite: {response_post.status_code} - {response_post.text}")
-        return
+    if res_guess.status_code == 200:
+        next_battle = res_guess.json()
+        print("Success! Next Battle Received:")
+        print(f"A: {next_battle['a']['name']} (Score: {next_battle['a']['score']})")
+        print(f"B: {next_battle['b']['name']} (Score: {next_battle['b']['score']})")
 
-    resultado = response_post.json()
+        # Verify if winner was kept (since guess was True)
+        winner_name = data['a']['name'] if score_a >= score_b else data['b']['name']
+        if next_battle['a']['name'] == winner_name or next_battle['b']['name'] == winner_name:
+            print("\n✅ Logic Verified: Winner was kept.")
 
-    print("\n3. 🏆 Resultado da Rodada:")
-    print(json.dumps(resultado["result"], indent=4, ensure_ascii=False))
-
-    print("\n4. ⏭️ Próxima Batalha (Gerada para a próxima rodada):")
-    print(json.dumps(resultado["next_battle"], indent=4, ensure_ascii=False))
+            pprint.pprint(next_battle)
+        else:
+            print("\n❌ Logic Error: Winner was not kept despite correct guess.")
+    else:
+        print(f"Failed: {res_guess.status_code} - {res_guess.text}")
 
 if __name__ == "__main__":
-    # Testando com a categoria football
-    testar_palpite_dinamico("football")
+    run_test()

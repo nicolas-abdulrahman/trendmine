@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Trophy, Cpu, Dna, ChevronRight } from "lucide-react";
+import { Trophy, Cpu, Dna, ChevronRight, Gamepad } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import ThemeCard from "../components/ThemeCard";
 
@@ -18,7 +18,8 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             className="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-4 text-shadow-glow"
           >
-            Which is more <span className="text-primary italic">searched?</span>
+            Oque é mais buscado
+            <span className="text-primary italic"> buscado?</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -26,8 +27,7 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             className="font-body text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto"
           >
-            Teste seu conhecimento com o que é mais buscado no Wikipedia. Opa,
-            Sidney! :D
+            Teste seu conhecimento com o que é mais buscado no Wikipedia.
           </motion.p>
         </header>
 
@@ -44,26 +44,26 @@ export default function Home() {
             seed="football"
           />
           <ThemeCard
-            title="tecnology"
-            description="Programming languages, New tech, Algorithms"
+            title="Technology"
+            description="Languages, Software, Companies & Concepts"
             icon={<Cpu size={48} strokeWidth={1.5} />}
             colorClass="bg-surface-container-high hover:bg-surface-container-highest"
             iconBgClass="bg-tertiary-container"
             iconColorClass="text-on-tertiary-container"
             lineColorClass="bg-tertiary-container"
             delay={0.4}
-            seed="tecnology"
+            seed="tech"
           />
           <ThemeCard
-            title="Science"
-            description="History, Holidays, Festivals"
-            icon={<Dna size={48} strokeWidth={1.5} />}
+            title="Games"
+            description="Strategy, Adventure, RPG & Simulation"
+            icon={<Gamepad size={48} strokeWidth={1.5} />}
             colorClass="bg-secondary-container/20 hover:bg-secondary-container/40"
             iconBgClass="bg-secondary-container"
             iconColorClass="text-on-secondary-container"
             lineColorClass="bg-secondary"
             delay={0.5}
-            seed="events"
+            seed="games"
           />
         </div>
 
@@ -83,37 +83,6 @@ export default function Home() {
           </button>
         </motion.div>
       </div>
-
-      {/* Side Bento Cards (Desktop Only) */}
-      <aside className="hidden xl:flex flex-col gap-6 absolute right-12 top-1/2 -translate-y-1/2 w-72">
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.8 }}
-          className="p-6 rounded-2xl bg-surface-container-low border-l-4 border-primary shadow-sm"
-        >
-          <p className="text-[10px] font-bold uppercase tracking-widest text-primary mb-2">
-            Trend Report
-          </p>
-          <h4 className="font-headline font-bold text-on-surface leading-tight">
-            &quot;Super Bowl&quot; is peaking right now.
-          </h4>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.9 }}
-          className="p-6 rounded-2xl bg-surface-container-low border-l-4 border-secondary shadow-sm"
-        >
-          <p className="text-[10px] font-bold uppercase tracking-widest text-secondary mb-2">
-            Did you know?
-          </p>
-          <h4 className="font-headline font-bold text-on-surface leading-tight">
-            Football is searched 4x more than Baseball globally.
-          </h4>
-        </motion.div>
-      </aside>
     </main>
   );
 }

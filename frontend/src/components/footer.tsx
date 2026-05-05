@@ -9,7 +9,7 @@ export default function TrendMineFooter() {
             TRENDMINE
           </span>
           <span className="text-[10px] font-medium tracking-widest uppercase opacity-40">
-            © 2024 THE ELECTRIC PLAYGROUND
+            © 2026 PROJETO DE SIDNEY
           </span>
         </div>
 
