@@ -621,7 +621,7 @@ def get_query(seed: str, keys ) -> Item:
     Selects a random item from target_sections[seed],
     fetches its display name and pageview score.
     """
-    if seed not in trivia_categories:
+    if seed not in GAME_DATA:
         raise ValueError(f"Seed '{seed}' not found in target sections.")
 
     # Get a random category/key from the seed
