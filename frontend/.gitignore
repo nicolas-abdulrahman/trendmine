@@ -24,6 +24,6 @@ dist-ssr
 *.sw?
 .env
 *.json
-
+!vercel.json
 
 wiki/
