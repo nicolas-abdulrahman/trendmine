@@ -48,7 +48,6 @@ export const BrazilIcon: React.FC<IconProps> = ({
 export const IconA: React.FC<IconProps> = ({
   size = 24,
   className = "",
-  isActive = false,
 }) => (
   <svg
     width={size}
@@ -69,7 +68,6 @@ export const IconA: React.FC<IconProps> = ({
 export const IconB: React.FC<IconProps> = ({
   size = 24,
   className = "",
-  isActive = false,
 }) => (
   <svg
     width={size}
@@ -87,7 +85,3 @@ export const IconB: React.FC<IconProps> = ({
   </svg>
 );
 
-interface IconProps {
-  size?: number;
-  className?: string;
-}
