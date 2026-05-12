@@ -933,7 +933,6 @@ def find_the_culprit(data, path=""):
             else:
                 find_the_culprit(v, f"{path} -> index {i}")
 
-find_the_culprit(trivia_categories)
 if __name__ == "__main__":
     processed_games = transform_to_nested_data(trivia_categories)
   #  processed_games = transform_to_nested_data(trivia_categories)
