@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from "motion/react";
-import { ChevronRight, Loader2, Trophy } from "lucide-react";
+import { Loader2, Trophy } from "lucide-react";
 import { forwardRef, useImperativeHandle, useRef, useCallback } from "react";
 
 export interface Topic {
@@ -85,12 +85,14 @@ const GameCard = forwardRef<GameCardHandle, GameCardProps>(function GameCard(
   const animFrameRef = useRef<number | null>(null);
 
   const triggerConfetti = useCallback(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
+    const canvasEl = canvasRef.current;
+    if (!canvasEl) return;
     if (animFrameRef.current !== null)
       cancelAnimationFrame(animFrameRef.current);
-    const ctx = canvas.getContext("2d");
+    const ctx = canvasEl.getContext("2d");
     if (!ctx) return;
+    const canvas: HTMLCanvasElement = canvasEl;
+    const context: CanvasRenderingContext2D = ctx;
     const rect = canvas.getBoundingClientRect();
     canvas.width = rect.width;
     canvas.height = rect.height;
@@ -99,7 +101,7 @@ const GameCard = forwardRef<GameCardHandle, GameCardProps>(function GameCard(
     const drag = 0.985;
 
     function animate() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      context.clearRect(0, 0, canvas.width, canvas.height);
       let alive = false;
       for (const p of particles) {
         if (p.opacity <= 0) continue;
@@ -115,21 +117,21 @@ const GameCard = forwardRef<GameCardHandle, GameCardProps>(function GameCard(
           continue;
         }
         if (p.y > canvas.height * 0.75) p.opacity -= 0.02;
-        ctx.save();
-        ctx.globalAlpha = Math.max(0, p.opacity);
-        ctx.translate(p.x, p.y);
-        ctx.rotate(p.rotation);
-        ctx.fillStyle = p.color;
+        context.save();
+        context.globalAlpha = Math.max(0, p.opacity);
+        context.translate(p.x, p.y);
+        context.rotate(p.rotation);
+        context.fillStyle = p.color;
         if (p.shape === "circle") {
-          ctx.beginPath();
-          ctx.arc(0, 0, p.width / 2, 0, Math.PI * 2);
-          ctx.fill();
+          context.beginPath();
+          context.arc(0, 0, p.width / 2, 0, Math.PI * 2);
+          context.fill();
         } else if (p.shape === "star") {
-          drawStar(ctx, 0, 0, p.width / 2);
+          drawStar(context, 0, 0, p.width / 2);
         } else {
-          ctx.fillRect(-p.width / 2, -p.height / 2, p.width, p.height);
+          context.fillRect(-p.width / 2, -p.height / 2, p.width, p.height);
         }
-        ctx.restore();
+        context.restore();
       }
       if (alive) animFrameRef.current = requestAnimationFrame(animate);
     }

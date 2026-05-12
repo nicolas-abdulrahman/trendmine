@@ -9,7 +9,6 @@ interface IconProps {
 export const GithubIcon: React.FC<IconProps> = ({
   size = 20,
   className = "",
-  isActive = false,
 }) => {
   return (
     <svg

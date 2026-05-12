@@ -3,7 +3,7 @@ import TopicCard from "./card";
 import TopicListItem from "./list";
 import TopicGridButton from "./grid";
 import { getTopicImage } from "../../utils/getTopicImage";
-import { Settings2, Code2, Monitor, Cpu } from "lucide-react";
+import { Code2 } from "lucide-react";
 import {
   Gamepad2,
   Map,
@@ -17,14 +17,12 @@ import {
   Trophy,
 } from "lucide-react";
 import {
-  Shield,
   Globe,
-  ChevronUp, // Football
   AppWindow,
   Building2,
   Lightbulb, // Tech
 } from "lucide-react";
-import { BrazilIcon, IconA, IconB } from "./icons";
+import { BrazilIcon, IconB } from "./icons";
 interface Team {
   displayName: string;
   wikipediaName: string;

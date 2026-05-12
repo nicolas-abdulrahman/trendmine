@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Lightbulb, Loader2 } from "lucide-react";
+import { Lightbulb } from "lucide-react";
 import { useSearchParams } from "react-router-dom";
 import GameCard, { type Topic, type GameCardHandle } from "./GameCard";
 import { getTopicImage } from "../../utils/getTopicImage";
