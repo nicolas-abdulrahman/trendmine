@@ -1,4 +1,3 @@
-from numpy.f2py.crackfortran import c
 import json
 import random
 import re
@@ -8,7 +7,6 @@ from pathlib import Path
 from pprint import pprint
 from typing import Dict, List
 
-import ollama
 import requests
 import wikipediaapi
 from bs4 import BeautifulSoup
@@ -602,8 +600,6 @@ def get_pageviews(wikipedia_name: str,seed, days: int = 30) -> int:
 
 # Example target_sections structure for the function to work
 # target_sections = {"football": {"teams": ["Sport_Club_do_Recife", "Clube_Náutico_Capibaribe"]}}
-from wiki.db import get_view_count
-
 import unicodedata
 
 def remove_accents(input_str):
@@ -672,6 +668,8 @@ def write_to_file(name, data, output_path: Path = Path("data/teams copy.json")):
 
 
 def evaluate(query: str) -> float:
+    import ollama
+
     messages = [
         {
             "role": "system",
@@ -807,11 +805,13 @@ def flatten(path: Path) -> Path:
     return output_path
 
 
-from wiki.db import connect
 def get_bulk_scores(titles_set):
     """
     Fetches all view counts in a single query to save the HDD.
     """
+    from wiki.db import connect
+    import mysql.connector
+
     scores_map = {}
     if not titles_set:
         return scores_map
@@ -868,6 +868,8 @@ def transform_to_data_struct(nested_dict ):
     return final_struct
 
 def transform_to_nested_data(nested_dict: dict[str, dict[str, list[str]]]) -> dict[str, dict[str, list[Data]]]:
+    from wiki.db import connect
+
     # 1. Flatten all titles for a single HDD seek
     all_titles = set()
     for  title, sub_content in nested_dict.items():

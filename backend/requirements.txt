@@ -1,4 +1,13 @@
 fastapi
-uvicorn
+uvicorn[standard]
 pytrends
 numpy
+pandas
+rich
+email-validator
+requests
+wikipedia-api
+beautifulsoup4
+ollama
+python-dotenv
+mysql-connector-python

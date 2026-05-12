@@ -1,7 +1,17 @@
+import os
 import sqlite3
 from contextlib import contextmanager
 
-DB_NAME = "electric_trivia.db"
+# Vercel serverless: cwd is read-only; only /tmp is writable.
+def _default_db_path() -> str:
+    if os.environ.get("SQLITE_PATH"):
+        return os.environ["SQLITE_PATH"]
+    if os.environ.get("VERCEL") or os.environ.get("AWS_LAMBDA_FUNCTION_NAME"):
+        return "/tmp/electric_trivia.db"
+    return "electric_trivia.db"
+
+
+DB_NAME = _default_db_path()
 
 @contextmanager
 def get_db():
