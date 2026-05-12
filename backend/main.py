@@ -235,5 +235,3 @@ def log_in(payload: LoginRequest):
 
 # 4. Gerenciador de Ciclo de Vida (Lifespan)
 
-if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8000)
