@@ -4,6 +4,7 @@ import UserStats from "./userStats";
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import { User } from "../utils/user";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 interface NavBarProps {
   score: number;
@@ -28,9 +29,11 @@ export default function TrendmineNavBar({ score, best, current }: NavBarProps) {
     <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-primary/5">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="text-2xl font-black italic tracking-tighter text-primary">
-            TRENDMINE
-          </span>
+          <Link to="/" className="flex items-center gap-2">
+            <span className="text-2xl font-black italic tracking-tighter text-primary">
+              TRENDMINE
+            </span>
+          </Link>
         </div>
 
         <div className="hidden md:flex items-center gap-8">

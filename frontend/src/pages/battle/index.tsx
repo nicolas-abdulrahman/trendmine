@@ -148,7 +148,7 @@ export default function Battle() {
         setIsRevealing(false);
         setResultStatus({ left: "idle", right: "idle" });
         setIsTransitioning(false);
-      }, 3000);
+      }, 1000);
     } catch (err) {
       console.error("Transition Error:", err);
       setTimeout(() => {

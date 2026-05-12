@@ -225,7 +225,7 @@ const GameCard = forwardRef<GameCardHandle, GameCardProps>(function GameCard(
                   Search Volume
                 </div>
                 <div
-                  className={`text-3xl md:text-4xl font-black font-headline ${isWinner ? "text-primary-fixed" : isLoser ? "text-on-surface/40" : "text-white"}`}
+                  className={`text-white text-4xl md:text-4xl font-headline [-webkit-text-stroke:1px_black]`}
                 >
                   {topic.searchVolume?.toLocaleString() ?? "???"}
                 </div>

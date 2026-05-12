@@ -1,3 +1,5 @@
+import asyncio
+from fastapi.concurrency import asynccontextmanager
 from rich.pretty import pprint
 import json
 import time
@@ -16,8 +18,40 @@ from fastapi import FastAPI, HTTPException, Body
 from pydantic import BaseModel, EmailStr
 import db # Importa o arquivo criado acima
 
+async def monitor_and_refill():
+    amount = 100
+    while True:
+        print("📦 Verificando estoque de batalhas...")
 
-app = FastAPI(title="TrendMine API")
+        for category in battles_buffer.keys():
+            current_size = len(battles_buffer[category])
+
+            if current_size < amount:
+                needed = amount - current_size
+                print(f"⚠️ {category} está baixo ({current_size}/{amount}). Gerando {needed} novas...")
+
+                # Adiciona as batalhas que faltam
+                for _ in range(needed):
+                    try:
+                        # Aqui você gera a batalha (opcao_a e opcao_b)
+                        # Como get_query pode ser lenta (Wiki), fazemos uma por uma
+                        new_battle = BattleOut(
+                             get_query(category, defaults[category]),
+                             get_query(category, defaults[category])
+                        )
+
+                        battles_buffer[category].append(new_battle)
+                    except Exception as e:
+                        print(f"❌ Erro ao reabastecer {category}: {e}")
+            else:
+                print(f"✅ {category} está abastecido.")
+
+        # 3. Espera 1 minuto antes de checar de novo
+        await asyncio.sleep(60)
+
+
+
+app = FastAPI(title="TrendMine API" )
 origins = [
     "http://localhost:5173",
     "http://127.0.0.1",
@@ -71,12 +105,21 @@ class PublicBattleOut(BaseModel):
     a: PublicBattleOption
     b: PublicBattleOption
 
+battles_buffer: Dict[str, list[BattleOut]]= {
+    "football": [],
+    "tech": [],
+    "games": []
+}
+
 active_battles: Dict[str, Session] = {}
 
 defaults = {
-    "football": ["Campeonato_Brasileiro_Série_A", "Brazil_Clubs"],
+    "football": ["Campeonato_Brasileiro_Série_A", "Brazil_Clubs", "Campeonato_Brasileiro_Série_B"],
     "tech": ["Programming_languages"],
-    "games": ["Category:Strategy_video_games", "Category:Adventure_games"]
+    "games": ["Category:Strategy_video_games", "Category:Adventure_games", "Category:Role-playing_video_games",
+           "Category:Puzzle_video_games",
+           "Category:Simulation_video_games",
+    ]
 }
 
 def format_battle_response(battle_id: str, battle: BattleOut):
@@ -91,22 +134,16 @@ def format_battle_response(battle_id: str, battle: BattleOut):
 def get_battle(seed: str = Query(default="football")):
     if seed not in defaults:
         seed = "football"
-    try:
-        print("New Connection")
-        opcao_a = get_query(seed, defaults[seed])
-        opcao_b = get_query(seed, defaults[seed])
 
-        while opcao_b.page == opcao_a.page:
-            opcao_b = get_query(seed, defaults[seed])
+    opcao_a = get_query(seed, defaults[seed])
+    opcao_b = get_query(seed, defaults[seed])
+    battle = BattleOut(a=opcao_a, b=opcao_b)
 
-        battle_id = str(uuid.uuid4())
-        battle = BattleOut(a=opcao_a, b=opcao_b)
+    battle_id = str(uuid.uuid4())
 
-        active_battles[battle_id] = Session(battle, seed, 0)
-        return format_battle_response(battle_id, battle)
+    active_battles[battle_id] = Session(battle, seed, 0)
+    return format_battle_response(battle_id, battle)
 
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/battle/guess", response_model=PublicBattleOut)
 def resolve_guess(payload: GuessPayload):
@@ -116,6 +153,7 @@ def resolve_guess(payload: GuessPayload):
         raise HTTPException(status_code=402, detail="Battle session expired.")
     battle = session.battle
     seed = session.seed
+
     novo_a = get_query(seed, defaults[seed])
     novo_b = get_query(seed, defaults[seed])
     new_battle = BattleOut(novo_a, novo_b)
@@ -193,5 +231,9 @@ def log_in(payload: LoginRequest):
                 "score": user["score"]
             }
         }
+
+
+# 4. Gerenciador de Ciclo de Vida (Lifespan)
+
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8000)

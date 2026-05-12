@@ -1,4 +1,0 @@
--e fastapi
-uvicorn
-pytrends
-numpy
