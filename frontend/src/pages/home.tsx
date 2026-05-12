@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Trophy, Cpu, Dna, ChevronRight, Gamepad } from "lucide-react";
+import { Trophy, Cpu, ChevronRight, Gamepad } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import ThemeCard from "../components/ThemeCard";
 

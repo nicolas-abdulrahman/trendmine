@@ -1,18 +1,16 @@
 import "../index.css";
-import { BarChart3, LogIn, Settings } from "lucide-react";
+import { LogIn } from "lucide-react";
 import UserStats from "./userStats";
-import { Navigate, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { User } from "../utils/user";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 interface NavBarProps {
   score: number;
-  best: number;
-  current: String;
 }
 
-export default function TrendmineNavBar({ score, best, current }: NavBarProps) {
+export default function TrendmineNavBar({ score }: NavBarProps) {
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Topics", href: "/topics" },
@@ -24,7 +22,7 @@ export default function TrendmineNavBar({ score, best, current }: NavBarProps) {
   useEffect(() => {
     setUser(User.current());
   }, [location.pathname]);
-  const is_logged_in = user ? true : false;
+
   return (
     <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-primary/5">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
@@ -65,7 +63,7 @@ export default function TrendmineNavBar({ score, best, current }: NavBarProps) {
           <div className="flex items-center gap-3">
             <button
               className="flex items-center gap-2 bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-full font-display font-bold text-sm shadow-lg shadow-primary/20 hover:scale-105 transition-all"
-              onClick={() => navigate("log_in")}
+              onClick={() => navigate("/log_in")}
             >
               <LogIn size={16} strokeWidth={3} />
               Login/Sign In
