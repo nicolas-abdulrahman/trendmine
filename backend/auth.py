@@ -7,8 +7,8 @@ def _default_db_path() -> str:
     if os.environ.get("SQLITE_PATH"):
         return os.environ["SQLITE_PATH"]
     if os.environ.get("VERCEL") or os.environ.get("AWS_LAMBDA_FUNCTION_NAME"):
-        return "/tmp/electric_trivia.db"
-    return "electric_trivia.db"
+        return "/tmp/trend_mine.db"
+    return "trend_mine.db"
 
 
 DB_NAME = _default_db_path()

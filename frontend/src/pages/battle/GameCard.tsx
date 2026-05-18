@@ -179,8 +179,7 @@ const GameCard = forwardRef<GameCardHandle, GameCardProps>(function GameCard(
         <>
           <img
             src={topic.imageUrl}
-            alt={topic.name}
-            className={`w-full h-full object-contain transition-all duration-1000 ${
+            className={`w-full h-full object-contain  ${
               isLoser
                 ? "grayscale opacity-30 scale-95"
                 : isRevealing

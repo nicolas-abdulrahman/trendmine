@@ -34,7 +34,9 @@ async function competitorToTopic(
 
 export default function Battle() {
   const [searchParams] = useSearchParams();
-  const seed = searchParams.get("seed") ?? "football";
+  const topics= searchParams.get("topics") 
+  const seed= searchParams.get("seed") ?? "games"
+
 
   const leftCardRef = useRef<GameCardHandle>(null);
   const rightCardRef = useRef<GameCardHandle>(null);
@@ -48,6 +50,8 @@ export default function Battle() {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [score, setScore] = useState(0);
   const [best, setBest] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
+  
 
   const [resultStatus, setResultStatus] = useState<{
     left: "idle" | "winner" | "loser";
@@ -68,7 +72,9 @@ export default function Battle() {
       if (ignore) return;
       setLoading(true);
       try {
-        const res = await fetch(`/api/battle?seed=${encodeURIComponent(seed)}`);
+        const query = topics ? "topics" : "seed";
+        const content = topics || seed;
+        const res = await fetch(`/api/battle?${query}=${encodeURIComponent(content)}`);
         const data = await res.json();
         const prepared = await prepareBattleData(data);
         setBattleId(prepared.id);
@@ -85,6 +91,15 @@ export default function Battle() {
       ignore = true;
     };
   }, [seed, prepareBattleData]);
+  const nextBattle = async (data: any) => {
+        const nextBattle = await prepareBattleData(data);
+        setBattleId(nextBattle.id);
+        setLeftTopic(nextBattle.left);
+        setRightTopic(nextBattle.right);
+        setIsRevealing(false);
+        setResultStatus({ left: "idle", right: "idle" });
+        setIsTransitioning(false);
+    }
 
   const handleGuess = async (pickedId: string) => {
     if (
@@ -133,30 +148,11 @@ export default function Battle() {
         }),
       });
 
-      // O retorno agora é diretamente a estrutura da próxima batalha (BattleResponse)
       const data: BattleResponse = await response.json();
+      await nextBattle(data);
+    }catch (err) {
 
-      // Pré-carrega as imagens da próxima rodada em background
-      const nextBattle = await prepareBattleData(data);
-
-      // 3. TRANSIÇÃO SUAVE
-      setTimeout(() => {
-        setBattleId(nextBattle.id);
-        setLeftTopic(nextBattle.left);
-        setRightTopic(nextBattle.right);
-
-        setIsRevealing(false);
-        setResultStatus({ left: "idle", right: "idle" });
-        setIsTransitioning(false);
-      }, 1000);
-    } catch (err) {
-      console.error("Transition Error:", err);
-      setTimeout(() => {
-        setIsRevealing(false);
-        setIsTransitioning(false);
-      }, 3000);
-    }
-  };
+    }}
 
   return (
     <main className="flex-grow flex flex-col items-center justify-center relative px-6 py-12 md:py-16 overflow-hidden">

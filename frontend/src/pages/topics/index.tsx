@@ -23,6 +23,7 @@ import {
   Lightbulb, // Tech
 } from "lucide-react";
 import { BrazilIcon, IconB } from "./icons";
+import { useNavigate } from "react-router-dom";
 interface Team {
   displayName: string;
   wikipediaName: string;
@@ -59,6 +60,14 @@ const TopicsPage: React.FC = () => {
   const [selectedTechs, setSelectedTechs] = useState<string[]>([
     "Programming Languages",
   ]);
+
+  const navigate = useNavigate();
+  const send_form = async () => {
+    const req = `topics=football[${selectedGenres.join(",")
+    }tech[${selectedTechs.join(",")
+    }games[${selectedTechs.join(",")}]`;
+    navigate(`/battle?${req}`);
+    }
 
   // 2. WIKIPEDIA IMAGE FETCHING
   useEffect(() => {
@@ -161,22 +170,22 @@ const TopicsPage: React.FC = () => {
               {[
                 {
                   name: "Adventure",
-                  wiki: "Category:Adventure_games",
+                  wiki: "Adventure_games",
                   icon: Map,
                 },
                 {
                   name: "Strategy",
-                  wiki: "Category:Strategy_video_games",
+                  wiki: "Strategy_video_games",
                   icon: ChessKnight,
                 },
                 {
                   name: "RPG",
-                  wiki: "Category:Role-playing_video_games",
+                  wiki: "Role-playing_video_games",
                   icon: Sword,
                 },
                 {
                   name: "Puzzle",
-                  wiki: "Category:Puzzle_video_games",
+                  wiki: "Puzzle_video_games",
                   icon: Puzzle,
                 },
                 {
@@ -250,7 +259,9 @@ const TopicsPage: React.FC = () => {
         {/* STICKY FOOTER */}
         <div className="fixed bottom-0 left-0 w-full p-8 flex justify-center pointer-events-none z-50">
           <div className="w-full max-w-lg bg-surface/80 backdrop-blur-2xl p-4 rounded-full shadow-2xl pointer-events-auto border border-white/20">
-            <button className="w-full h-16 bg-gradient-to-r from-primary to-primary-container text-on-primary font-headline font-extrabold text-xl rounded-full transition-all duration-300 hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-4 group">
+            <button
+            onClick={send_form}
+             className="w-full h-16 bg-gradient-to-r from-primary to-primary-container text-on-primary font-headline font-extrabold text-xl rounded-full transition-all duration-300 hover:scale-[1.02] active:scale-95 flex items-center justify-center gap-4 group">
               <span>Play</span>
               <ArrowRight className="group-hover:translate-x-2 transition-transform" />
             </button>
